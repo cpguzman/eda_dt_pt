@@ -203,3 +203,93 @@ model.cp_power_charge_limit = pyo.Constraint(model.ev, model.t, model.cp, rule =
 #        return m.EEV[ev,t] + m.Etriprelax[ev,t] >= m.EEVmax[ev]*m.m
 #    return pyo.Constraint.Skip
 #model.balance_energy_EVS3 = pyo.Constraint(model.ev, model.t, rule = _balance_energy_EVS3)
+
+
+def _FOag(m):
+    return sum([m.PEV[ev,t]*m.dT[t]*m.cDA[t] - m.PEVdc[ev, t]*m.dT[t]*(m.cDA[t]- m.DegCost) + (m.Etripn[ev,t] - m.EEV[ev,t]) + m.Etriprelax[ev,t]*m.penalty1 + m.Eminsocrelax[ev,t]*m.penalty2 for ev in np.arange(1, n_evs + 1) for t in np.arange(1, n_time + 1)])
+    #return sum([m.PEV[ev,t]*m.dT[t]*m.cDA[t] - m.PEVdc[ev, t]*m.dT[t]*(m.cDA[t])  for ev in np.arange(1, n_evs + 1) for t in np.arange(1, n_time + 1)])
+
+model.FOag = pyo.Objective(rule = _FOag, sense = pyo.minimize)
+
+
+from pyomo.opt import SolverFactory
+
+model.write('res_V4_EC.lp',  io_options={'symbolic_solver_labels': True})
+
+# Create a solver
+#opt = pyo.SolverFactory('cbc', executable='C:/Program Files/Cbc-releases.2.10.8-x86_64-w64-mingw64/bin/cbc.exe')
+
+opt = pyo.SolverFactory('cplex', executable='/mnt/c/Program Files/IBM/ILOG/CPLEX_Studio129/cplex/bin/x64_win64/cplex.exe')
+opt.options['LogFile'] = 'res_V4_EC.log'
+
+#opt = pyo.SolverFactory('ipopt', executable='C:/Program Files/Ipopt-3.11.1-win64-intel13.1/bin/ipopt.exe')
+#opt.options['print_level'] = 12
+#opt.options['output_file'] = "res_V5_EC.log"
+
+results = opt.solve(model)#, tee=True)
+results.write()
+
+
+pyo.value(model.FOag)
+
+now = datetime.now()
+
+end_time = now.strftime("%H:%M:%S")
+print("End Time =", end_time)
+print("Dif: {}".format(datetime.strptime(end_time, "%H:%M:%S") - datetime.strptime(start_time, "%H:%M:%S")))
+
+def ext_pyomo_vals(vals):
+    # make a pd.Series from each
+    s = pd.Series(vals.extract_values(),
+                  index=vals.extract_values().keys())
+    # if the series is multi-indexed we need to unstack it...
+    if type(s.index[0]) == tuple:    # it is multi-indexed
+        s = s.unstack(level=1)
+    else:
+        # force transition from Series -> df
+        s = pd.DataFrame(s)
+    return s
+
+PEV_df = ext_pyomo_vals(model.PEV)
+dT_df = ext_pyomo_vals(model.dT)
+cDA_df = ext_pyomo_vals(model.cDA)
+PEVdc_df = ext_pyomo_vals(model.PEVdc)
+EEV_df = ext_pyomo_vals(model.EEV)
+
+charge_cost = sum([PEV_df[t][ev]*dT_df[0][t]*cDA_df[0][t]
+                   for ev in np.arange(1, n_evs + 1) for t in np.arange(1, n_time + 1)])
+
+discharge_cost = sum([PEVdc_df[t][ev]*dT_df[0][t]*cDA_df[0][t]
+                      for ev in np.arange(1, n_evs + 1) for t in np.arange(1, n_time + 1)])
+
+print('Charge cost: {}'.format(charge_cost))
+print('Discharge cost: {}'.format(discharge_cost))
+
+print("Total Charge: {}".format(np.sum(PEV_df.to_numpy())))
+print("Total Discharge: {}".format(np.sum(PEVdc_df.to_numpy())))
+
+
+Etriprelax_df = ext_pyomo_vals(model.Etriprelax)
+Eminsocrelax_df = ext_pyomo_vals(model.Eminsocrelax)
+Etripn_df = ext_pyomo_vals(model.Etripn)
+
+import os 
+folder = 'RESULTS_' + str(n_evs)
+
+if not os.path.exists(folder):
+    os.makedirs(folder)
+    
+EEV_df.to_csv(folder + '/EEV.csv')
+PEV_df.to_csv(folder + '/PEV.csv')
+PEVdc_df.to_csv(folder + '/PEVdc.csv')
+PEV_df.sum().to_csv(folder + '/PEV_h.csv')
+PEVdc_df.sum().to_csv(folder + '/PEVdc_h.csv')
+
+Etriprelax_df.to_csv(folder + '/Etriprelax.csv')
+Etriprelax_df.sum().to_csv(folder + '/Etriprelax_h.csv')
+
+Eminsocrelax_df.to_csv(folder + '/Eminsocrelax.csv')
+Eminsocrelax_df.sum().to_csv(folder + '/Eminsocrelax_h.csv')
+
+Etripn_df.to_csv(folder + '/Etripn.csv')
+Etripn_df.sum().to_csv(folder + '/Etripn_h.csv')
