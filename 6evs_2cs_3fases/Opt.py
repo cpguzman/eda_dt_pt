@@ -204,7 +204,6 @@ model.cp_power_charge_limit = pyo.Constraint(model.ev, model.t, model.cp, rule =
 
 
 def _cp_power_discharging_limit(m,ev,t,cp): 
-    print({m.type_})
     if m.type_[cp] == 1 and m.place[cp] == m.ev_id[ev]: 
         #print(f"Entrou no IF no type {m.type} com ev = {ev}, t = {t}, cp = {cp}")
         return m.PEVdc[ev,t] <= m.Pcpmax[cp]*m.alpha[ev,t]*m.b[ev,t]
@@ -239,47 +238,47 @@ model._cp_power_discharging = pyo.Constraint(model.ev, model.t, model.cp, rule =
 model.my_cp_fases = pyo.Param(model.cp, initialize=_auxDictionary(data['cp_inputs'].to_numpy()[:,8]))
 
 #def _cs_power_charging_limit(m,f,t,cp, cs): 
-def _cs_power_charging_limit(m,t,cp,cs): 
+def _cs_power_charging_limit(m,t,cs,cp): 
+    print("CS_ID ->CS", m.cs_id[cs], "CS_ID ->CP", m.my_cs_id_cp[cp], "CS", cs, "CP",cp)
     if m.cs_id[cs] == m.my_cs_id_cp[cp]: 
         print(f"-----------------PROXIMA RONDA------------------\né a vez do cp {cp}")
         
         soma = m.PCP[cp,t] - m.PCPdc[cp,t]
-        if m.cs_id[cs] == m.my_cs_id_cp[cp]:
-            print(f"cs{cs} cp {cp} m.my_cp_fases[cp] {m.my_cp_fases[cp]}")
-            for other_cp in m.cp:
-                if other_cp != cp and m.my_cp_fases[cp] == m.my_cp_fases[other_cp]:
-                    print(f"Entrou Entrou! {other_cp} {cp}")
-                    soma = soma + m.PCP[other_cp,t] - m.PCPdc[other_cp,t] 
-                    print(soma)
+        #print(f"cs{cs} cp {cp} m.my_cp_fases[cp] {m.my_cp_fases[cp]}")
+        for other_cp in m.cp:
+            #print(f"Uepa!! m.my_cs_id_cp[cp] = {m.my_cs_id_cp[cp]} e m.my_cs_id_cp[other_cp] =  ")
+            if other_cp != cp and m.my_cp_fases[cp] == m.my_cp_fases[other_cp] and m.my_cs_id_cp[cp] == m.my_cs_id_cp[other_cp]:
+                print(f"Entrou Entrou! {other_cp} {cp}")
+                soma = soma + m.PCP[other_cp,t] - m.PCPdc[other_cp,t] 
+                print(soma)
                 
         print(cp, m.cp_id[cp])
         print(soma)
         return soma <= m.Pcsmax[cs]/3 #se estiver isolado, a soma sempre vai ser só ele. Se nao, vai ser a soma dele com os outros
   
-    #return pyo.Constraint.Skip    
+    return pyo.Constraint.Skip    
 #model.cs_power_charging_limit = pyo.Constraint(model.f, model.t, model.cp, model.cs, rule = _cs_power_charging_limit)  
-model.cs_power_charging_limit = pyo.Constraint(model.t,model.cp, model.cs, rule = _cs_power_charging_limit)  
+model.cs_power_charging_limit = pyo.Constraint(model.t, model.cs,model.cp, rule = _cs_power_charging_limit)  
 
 
-def _cs_power_discharging_limit(m,t,cp,cs): 
+'''def _cs_power_discharging_limit(m,t,cp,cs): 
     if m.cs_id[cs] == m.my_cs_id_cp[cp]: 
         print(f"-----------------PROXIMA RONDA------------------\né a vez do cp {cp}")
         
         soma = m.PCP[cp,t] - m.PCPdc[cp,t]
-        if m.cs_id[cs] == m.my_cs_id_cp[cp]:
-            print(f"cs{cs} cp {cp} m.my_cp_fases[cp] {m.my_cp_fases[cp]}")
-            for other_cp in m.cp:
-                if other_cp != cp and m.my_cp_fases[cp] == m.my_cp_fases[other_cp]:
-                    print(f"Entrou Entrou! {other_cp} {cp}")
-                    soma = soma + m.PCP[other_cp,t] - m.PCPdc[other_cp,t] 
-                    print(soma)
+        print(f"cs{cs} cp {cp} m.my_cp_fases[cp] {m.my_cp_fases[cp]}")
+        for other_cp in m.cp:
+            if other_cp != cp and m.my_cp_fases[cp] == m.my_cp_fases[other_cp] and m.my_cs_id_cp[cp] == m.my_cs_id_cp[other_cp]:
+                print(f"Entrou Entrou! {other_cp} {cp}")
+                soma = soma + m.PCP[other_cp,t] - m.PCPdc[other_cp,t] 
+                print(soma)
                 
         print(cp, m.cp_id[cp])
         print(soma)
         return soma >= -1 * m.Pcsmax[cs]/3 #se estiver isolado, a soma sempre vai ser só ele. Se nao, vai ser a soma dele com os outros
   
 model.cs_power_discharging_limit = pyo.Constraint(model.t,model.cp, model.cs, rule = _cs_power_discharging_limit) 
-
+'''
 
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 #def _cs_power_charging_limit(m,f,t,cp, cs): 
@@ -359,7 +358,7 @@ model.write('res_V4_EC.lp',  io_options={'symbolic_solver_labels': True})
 # Create a solver
 #opt = pyo.SolverFactory('cbc', executable='C:/Program Files/Cbc-releases.2.10.8-x86_64-w64-mingw64/bin/cbc.exe')
 
-opt = pyo.SolverFactory('cplex', executable='C:/Program Files/IBM/ILOG/CPLEX_Studio129/cplex/bin/x64_win64/cplex.exe')
+opt = pyo.SolverFactory('cplex', executable="/mnt/c/Program Files/IBM/ILOG/CPLEX_Studio129/cplex/bin/x64_win64/cplex.exe")
 opt.options['LogFile'] = 'res_V4_EC.log'
 
 #opt = pyo.SolverFactory('ipopt', executable='C:/Program Files/Ipopt-3.11.1-win64-intel13.1/bin/ipopt.exe')
