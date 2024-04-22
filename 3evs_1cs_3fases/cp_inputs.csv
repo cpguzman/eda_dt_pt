@@ -1,4 +1,4 @@
 cs_id,cheff,dcheff,Pcpmax,V2G,Min Charge (kW),Place Start,Place End,Fase,Type,cp_id,csconnected
 1,0.98,1,11,1,4.14,1,1,1,1,1,1
 1,0.98,1,11,1,4.14,2,2,2,1,2,2
-1,1,1,2.4,0,0,3,3,2,2,3,3
+1,1,1,2.4,0,0,3,3,3,2,3,3

@@ -2,438 +2,78 @@
 
 min 
 FOag:
--1 EEV(1_1)
--1 EEV(1_10)
--1 EEV(1_11)
--1 EEV(1_12)
--1 EEV(1_13)
--1 EEV(1_14)
--1 EEV(1_15)
--1 EEV(1_16)
--1 EEV(1_17)
--1 EEV(1_18)
--1 EEV(1_19)
--1 EEV(1_2)
--1 EEV(1_20)
--1 EEV(1_21)
--1 EEV(1_22)
--1 EEV(1_23)
--1 EEV(1_24)
--1 EEV(1_3)
--1 EEV(1_4)
--1 EEV(1_5)
--1 EEV(1_6)
--1 EEV(1_7)
--1 EEV(1_8)
--1 EEV(1_9)
--1 EEV(2_1)
--1 EEV(2_10)
--1 EEV(2_11)
--1 EEV(2_12)
--1 EEV(2_13)
--1 EEV(2_14)
--1 EEV(2_15)
--1 EEV(2_16)
--1 EEV(2_17)
--1 EEV(2_18)
--1 EEV(2_19)
--1 EEV(2_2)
--1 EEV(2_20)
--1 EEV(2_21)
--1 EEV(2_22)
--1 EEV(2_23)
--1 EEV(2_24)
--1 EEV(2_3)
--1 EEV(2_4)
--1 EEV(2_5)
--1 EEV(2_6)
--1 EEV(2_7)
--1 EEV(2_8)
--1 EEV(2_9)
--1 EEV(3_1)
--1 EEV(3_10)
--1 EEV(3_11)
--1 EEV(3_12)
--1 EEV(3_13)
--1 EEV(3_14)
--1 EEV(3_15)
--1 EEV(3_16)
--1 EEV(3_17)
--1 EEV(3_18)
--1 EEV(3_19)
--1 EEV(3_2)
--1 EEV(3_20)
--1 EEV(3_21)
--1 EEV(3_22)
--1 EEV(3_23)
--1 EEV(3_24)
--1 EEV(3_3)
--1 EEV(3_4)
--1 EEV(3_5)
--1 EEV(3_6)
--1 EEV(3_7)
--1 EEV(3_8)
--1 EEV(3_9)
-+1000000 Eminsocrelax(1_1)
-+1000000 Eminsocrelax(1_10)
-+1000000 Eminsocrelax(1_11)
-+1000000 Eminsocrelax(1_12)
-+1000000 Eminsocrelax(1_13)
-+1000000 Eminsocrelax(1_14)
-+1000000 Eminsocrelax(1_15)
-+1000000 Eminsocrelax(1_16)
-+1000000 Eminsocrelax(1_17)
-+1000000 Eminsocrelax(1_18)
-+1000000 Eminsocrelax(1_19)
-+1000000 Eminsocrelax(1_2)
-+1000000 Eminsocrelax(1_20)
-+1000000 Eminsocrelax(1_21)
-+1000000 Eminsocrelax(1_22)
-+1000000 Eminsocrelax(1_23)
-+1000000 Eminsocrelax(1_24)
-+1000000 Eminsocrelax(1_3)
-+1000000 Eminsocrelax(1_4)
-+1000000 Eminsocrelax(1_5)
-+1000000 Eminsocrelax(1_6)
-+1000000 Eminsocrelax(1_7)
-+1000000 Eminsocrelax(1_8)
-+1000000 Eminsocrelax(1_9)
-+1000000 Eminsocrelax(2_1)
-+1000000 Eminsocrelax(2_10)
-+1000000 Eminsocrelax(2_11)
-+1000000 Eminsocrelax(2_12)
-+1000000 Eminsocrelax(2_13)
-+1000000 Eminsocrelax(2_14)
-+1000000 Eminsocrelax(2_15)
-+1000000 Eminsocrelax(2_16)
-+1000000 Eminsocrelax(2_17)
-+1000000 Eminsocrelax(2_18)
-+1000000 Eminsocrelax(2_19)
-+1000000 Eminsocrelax(2_2)
-+1000000 Eminsocrelax(2_20)
-+1000000 Eminsocrelax(2_21)
-+1000000 Eminsocrelax(2_22)
-+1000000 Eminsocrelax(2_23)
-+1000000 Eminsocrelax(2_24)
-+1000000 Eminsocrelax(2_3)
-+1000000 Eminsocrelax(2_4)
-+1000000 Eminsocrelax(2_5)
-+1000000 Eminsocrelax(2_6)
-+1000000 Eminsocrelax(2_7)
-+1000000 Eminsocrelax(2_8)
-+1000000 Eminsocrelax(2_9)
-+1000000 Eminsocrelax(3_1)
-+1000000 Eminsocrelax(3_10)
-+1000000 Eminsocrelax(3_11)
-+1000000 Eminsocrelax(3_12)
-+1000000 Eminsocrelax(3_13)
-+1000000 Eminsocrelax(3_14)
-+1000000 Eminsocrelax(3_15)
-+1000000 Eminsocrelax(3_16)
-+1000000 Eminsocrelax(3_17)
-+1000000 Eminsocrelax(3_18)
-+1000000 Eminsocrelax(3_19)
-+1000000 Eminsocrelax(3_2)
-+1000000 Eminsocrelax(3_20)
-+1000000 Eminsocrelax(3_21)
-+1000000 Eminsocrelax(3_22)
-+1000000 Eminsocrelax(3_23)
-+1000000 Eminsocrelax(3_24)
-+1000000 Eminsocrelax(3_3)
-+1000000 Eminsocrelax(3_4)
-+1000000 Eminsocrelax(3_5)
-+1000000 Eminsocrelax(3_6)
-+1000000 Eminsocrelax(3_7)
-+1000000 Eminsocrelax(3_8)
-+1000000 Eminsocrelax(3_9)
-+1 Etripn(1_1)
-+1 Etripn(1_10)
-+1 Etripn(1_11)
-+1 Etripn(1_12)
-+1 Etripn(1_13)
-+1 Etripn(1_14)
-+1 Etripn(1_15)
-+1 Etripn(1_16)
-+1 Etripn(1_17)
-+1 Etripn(1_18)
-+1 Etripn(1_19)
-+1 Etripn(1_2)
-+1 Etripn(1_20)
-+1 Etripn(1_21)
-+1 Etripn(1_22)
-+1 Etripn(1_23)
-+1 Etripn(1_24)
-+1 Etripn(1_3)
-+1 Etripn(1_4)
-+1 Etripn(1_5)
-+1 Etripn(1_6)
-+1 Etripn(1_7)
-+1 Etripn(1_8)
-+1 Etripn(1_9)
-+1 Etripn(2_1)
-+1 Etripn(2_10)
-+1 Etripn(2_11)
-+1 Etripn(2_12)
-+1 Etripn(2_13)
-+1 Etripn(2_14)
-+1 Etripn(2_15)
-+1 Etripn(2_16)
-+1 Etripn(2_17)
-+1 Etripn(2_18)
-+1 Etripn(2_19)
-+1 Etripn(2_2)
-+1 Etripn(2_20)
-+1 Etripn(2_21)
-+1 Etripn(2_22)
-+1 Etripn(2_23)
-+1 Etripn(2_24)
-+1 Etripn(2_3)
-+1 Etripn(2_4)
-+1 Etripn(2_5)
-+1 Etripn(2_6)
-+1 Etripn(2_7)
-+1 Etripn(2_8)
-+1 Etripn(2_9)
-+1 Etripn(3_1)
-+1 Etripn(3_10)
-+1 Etripn(3_11)
-+1 Etripn(3_12)
-+1 Etripn(3_13)
-+1 Etripn(3_14)
-+1 Etripn(3_15)
-+1 Etripn(3_16)
-+1 Etripn(3_17)
-+1 Etripn(3_18)
-+1 Etripn(3_19)
-+1 Etripn(3_2)
-+1 Etripn(3_20)
-+1 Etripn(3_21)
-+1 Etripn(3_22)
-+1 Etripn(3_23)
-+1 Etripn(3_24)
-+1 Etripn(3_3)
-+1 Etripn(3_4)
-+1 Etripn(3_5)
-+1 Etripn(3_6)
-+1 Etripn(3_7)
-+1 Etripn(3_8)
-+1 Etripn(3_9)
-+1000000 Etriprelax(1_1)
-+1000000 Etriprelax(1_10)
-+1000000 Etriprelax(1_11)
-+1000000 Etriprelax(1_12)
-+1000000 Etriprelax(1_13)
-+1000000 Etriprelax(1_14)
-+1000000 Etriprelax(1_15)
-+1000000 Etriprelax(1_16)
-+1000000 Etriprelax(1_17)
-+1000000 Etriprelax(1_18)
-+1000000 Etriprelax(1_19)
-+1000000 Etriprelax(1_2)
-+1000000 Etriprelax(1_20)
-+1000000 Etriprelax(1_21)
-+1000000 Etriprelax(1_22)
-+1000000 Etriprelax(1_23)
-+1000000 Etriprelax(1_24)
-+1000000 Etriprelax(1_3)
-+1000000 Etriprelax(1_4)
-+1000000 Etriprelax(1_5)
-+1000000 Etriprelax(1_6)
-+1000000 Etriprelax(1_7)
-+1000000 Etriprelax(1_8)
-+1000000 Etriprelax(1_9)
-+1000000 Etriprelax(2_1)
-+1000000 Etriprelax(2_10)
-+1000000 Etriprelax(2_11)
-+1000000 Etriprelax(2_12)
-+1000000 Etriprelax(2_13)
-+1000000 Etriprelax(2_14)
-+1000000 Etriprelax(2_15)
-+1000000 Etriprelax(2_16)
-+1000000 Etriprelax(2_17)
-+1000000 Etriprelax(2_18)
-+1000000 Etriprelax(2_19)
-+1000000 Etriprelax(2_2)
-+1000000 Etriprelax(2_20)
-+1000000 Etriprelax(2_21)
-+1000000 Etriprelax(2_22)
-+1000000 Etriprelax(2_23)
-+1000000 Etriprelax(2_24)
-+1000000 Etriprelax(2_3)
-+1000000 Etriprelax(2_4)
-+1000000 Etriprelax(2_5)
-+1000000 Etriprelax(2_6)
-+1000000 Etriprelax(2_7)
-+1000000 Etriprelax(2_8)
-+1000000 Etriprelax(2_9)
-+1000000 Etriprelax(3_1)
-+1000000 Etriprelax(3_10)
-+1000000 Etriprelax(3_11)
-+1000000 Etriprelax(3_12)
-+1000000 Etriprelax(3_13)
-+1000000 Etriprelax(3_14)
-+1000000 Etriprelax(3_15)
-+1000000 Etriprelax(3_16)
-+1000000 Etriprelax(3_17)
-+1000000 Etriprelax(3_18)
-+1000000 Etriprelax(3_19)
-+1000000 Etriprelax(3_2)
-+1000000 Etriprelax(3_20)
-+1000000 Etriprelax(3_21)
-+1000000 Etriprelax(3_22)
-+1000000 Etriprelax(3_23)
-+1000000 Etriprelax(3_24)
-+1000000 Etriprelax(3_3)
-+1000000 Etriprelax(3_4)
-+1000000 Etriprelax(3_5)
-+1000000 Etriprelax(3_6)
-+1000000 Etriprelax(3_7)
-+1000000 Etriprelax(3_8)
-+1000000 Etriprelax(3_9)
-+0.040300000000000002 PEV(1_1)
-+0.062399999999999997 PEV(1_10)
-+0.0499 PEV(1_11)
-+0.0402 PEV(1_12)
-+0.032399999999999998 PEV(1_13)
-+0.030200000000000001 PEV(1_14)
-+0.025999999999999999 PEV(1_15)
-+0.029999999999999999 PEV(1_16)
-+0.044999999999999998 PEV(1_17)
-+0.061699999999999998 PEV(1_18)
-+0.077100000000000002 PEV(1_19)
-+0.033099999999999997 PEV(1_2)
-+0.079699999999999993 PEV(1_20)
-+0.066199999999999995 PEV(1_21)
-+0.052900000000000003 PEV(1_22)
-+0.040099999999999997 PEV(1_23)
-+0.0223 PEV(1_24)
-+0.0229 PEV(1_3)
-+0.02 PEV(1_4)
-+0.014200000000000001 PEV(1_5)
-+0.014200000000000001 PEV(1_6)
-+0.0218 PEV(1_7)
-+0.0458 PEV(1_8)
-+0.065600000000000006 PEV(1_9)
-+0.040300000000000002 PEV(2_1)
-+0.062399999999999997 PEV(2_10)
-+0.0499 PEV(2_11)
-+0.0402 PEV(2_12)
-+0.032399999999999998 PEV(2_13)
-+0.030200000000000001 PEV(2_14)
-+0.025999999999999999 PEV(2_15)
-+0.029999999999999999 PEV(2_16)
-+0.044999999999999998 PEV(2_17)
-+0.061699999999999998 PEV(2_18)
-+0.077100000000000002 PEV(2_19)
-+0.033099999999999997 PEV(2_2)
-+0.079699999999999993 PEV(2_20)
-+0.066199999999999995 PEV(2_21)
-+0.052900000000000003 PEV(2_22)
-+0.040099999999999997 PEV(2_23)
-+0.0223 PEV(2_24)
-+0.0229 PEV(2_3)
-+0.02 PEV(2_4)
-+0.014200000000000001 PEV(2_5)
-+0.014200000000000001 PEV(2_6)
-+0.0218 PEV(2_7)
-+0.0458 PEV(2_8)
-+0.065600000000000006 PEV(2_9)
-+0.040300000000000002 PEV(3_1)
-+0.062399999999999997 PEV(3_10)
-+0.0499 PEV(3_11)
-+0.0402 PEV(3_12)
-+0.032399999999999998 PEV(3_13)
-+0.030200000000000001 PEV(3_14)
-+0.025999999999999999 PEV(3_15)
-+0.029999999999999999 PEV(3_16)
-+0.044999999999999998 PEV(3_17)
-+0.061699999999999998 PEV(3_18)
-+0.077100000000000002 PEV(3_19)
-+0.033099999999999997 PEV(3_2)
-+0.079699999999999993 PEV(3_20)
-+0.066199999999999995 PEV(3_21)
-+0.052900000000000003 PEV(3_22)
-+0.040099999999999997 PEV(3_23)
-+0.0223 PEV(3_24)
-+0.0229 PEV(3_3)
-+0.02 PEV(3_4)
-+0.014200000000000001 PEV(3_5)
-+0.014200000000000001 PEV(3_6)
-+0.0218 PEV(3_7)
-+0.0458 PEV(3_8)
-+0.065600000000000006 PEV(3_9)
-+0.059700000000000003 PEVdc(1_1)
-+0.037600000000000008 PEVdc(1_10)
-+0.050100000000000006 PEVdc(1_11)
-+0.059800000000000006 PEVdc(1_12)
-+0.067600000000000007 PEVdc(1_13)
-+0.069800000000000001 PEVdc(1_14)
-+0.07400000000000001 PEVdc(1_15)
-+0.070000000000000007 PEVdc(1_16)
-+0.055000000000000007 PEVdc(1_17)
-+0.038300000000000008 PEVdc(1_18)
-+0.022900000000000004 PEVdc(1_19)
-+0.066900000000000015 PEVdc(1_2)
-+0.020300000000000012 PEVdc(1_20)
-+0.033800000000000011 PEVdc(1_21)
-+0.047100000000000003 PEVdc(1_22)
-+0.059900000000000009 PEVdc(1_23)
-+0.077700000000000005 PEVdc(1_24)
-+0.077100000000000002 PEVdc(1_3)
-+0.080000000000000002 PEVdc(1_4)
-+0.085800000000000001 PEVdc(1_5)
-+0.085800000000000001 PEVdc(1_6)
-+0.078200000000000006 PEVdc(1_7)
-+0.054200000000000005 PEVdc(1_8)
-+0.0344 PEVdc(1_9)
-+0.059700000000000003 PEVdc(2_1)
-+0.037600000000000008 PEVdc(2_10)
-+0.050100000000000006 PEVdc(2_11)
-+0.059800000000000006 PEVdc(2_12)
-+0.067600000000000007 PEVdc(2_13)
-+0.069800000000000001 PEVdc(2_14)
-+0.07400000000000001 PEVdc(2_15)
-+0.070000000000000007 PEVdc(2_16)
-+0.055000000000000007 PEVdc(2_17)
-+0.038300000000000008 PEVdc(2_18)
-+0.022900000000000004 PEVdc(2_19)
-+0.066900000000000015 PEVdc(2_2)
-+0.020300000000000012 PEVdc(2_20)
-+0.033800000000000011 PEVdc(2_21)
-+0.047100000000000003 PEVdc(2_22)
-+0.059900000000000009 PEVdc(2_23)
-+0.077700000000000005 PEVdc(2_24)
-+0.077100000000000002 PEVdc(2_3)
-+0.080000000000000002 PEVdc(2_4)
-+0.085800000000000001 PEVdc(2_5)
-+0.085800000000000001 PEVdc(2_6)
-+0.078200000000000006 PEVdc(2_7)
-+0.054200000000000005 PEVdc(2_8)
-+0.0344 PEVdc(2_9)
-+0.059700000000000003 PEVdc(3_1)
-+0.037600000000000008 PEVdc(3_10)
-+0.050100000000000006 PEVdc(3_11)
-+0.059800000000000006 PEVdc(3_12)
-+0.067600000000000007 PEVdc(3_13)
-+0.069800000000000001 PEVdc(3_14)
-+0.07400000000000001 PEVdc(3_15)
-+0.070000000000000007 PEVdc(3_16)
-+0.055000000000000007 PEVdc(3_17)
-+0.038300000000000008 PEVdc(3_18)
-+0.022900000000000004 PEVdc(3_19)
-+0.066900000000000015 PEVdc(3_2)
-+0.020300000000000012 PEVdc(3_20)
-+0.033800000000000011 PEVdc(3_21)
-+0.047100000000000003 PEVdc(3_22)
-+0.059900000000000009 PEVdc(3_23)
-+0.077700000000000005 PEVdc(3_24)
-+0.077100000000000002 PEVdc(3_3)
-+0.080000000000000002 PEVdc(3_4)
-+0.085800000000000001 PEVdc(3_5)
-+0.085800000000000001 PEVdc(3_6)
-+0.078200000000000006 PEVdc(3_7)
-+0.054200000000000005 PEVdc(3_8)
-+0.0344 PEVdc(3_9)
++0.040300000000000002 grid_import(1_1)
++0.062399999999999997 grid_import(1_10)
++0.0499 grid_import(1_11)
++0.0402 grid_import(1_12)
++0.032399999999999998 grid_import(1_13)
++0.030200000000000001 grid_import(1_14)
++0.025999999999999999 grid_import(1_15)
++0.029999999999999999 grid_import(1_16)
++0.044999999999999998 grid_import(1_17)
++0.061699999999999998 grid_import(1_18)
++0.077100000000000002 grid_import(1_19)
++0.033099999999999997 grid_import(1_2)
++0.079699999999999993 grid_import(1_20)
++0.066199999999999995 grid_import(1_21)
++0.052900000000000003 grid_import(1_22)
++0.040099999999999997 grid_import(1_23)
++0.0223 grid_import(1_24)
++0.0229 grid_import(1_3)
++0.02 grid_import(1_4)
++0.014200000000000001 grid_import(1_5)
++0.014200000000000001 grid_import(1_6)
++0.0218 grid_import(1_7)
++0.0458 grid_import(1_8)
++0.065600000000000006 grid_import(1_9)
++0.040300000000000002 grid_import(2_1)
++0.062399999999999997 grid_import(2_10)
++0.0499 grid_import(2_11)
++0.0402 grid_import(2_12)
++0.032399999999999998 grid_import(2_13)
++0.030200000000000001 grid_import(2_14)
++0.025999999999999999 grid_import(2_15)
++0.029999999999999999 grid_import(2_16)
++0.044999999999999998 grid_import(2_17)
++0.061699999999999998 grid_import(2_18)
++0.077100000000000002 grid_import(2_19)
++0.033099999999999997 grid_import(2_2)
++0.079699999999999993 grid_import(2_20)
++0.066199999999999995 grid_import(2_21)
++0.052900000000000003 grid_import(2_22)
++0.040099999999999997 grid_import(2_23)
++0.0223 grid_import(2_24)
++0.0229 grid_import(2_3)
++0.02 grid_import(2_4)
++0.014200000000000001 grid_import(2_5)
++0.014200000000000001 grid_import(2_6)
++0.0218 grid_import(2_7)
++0.0458 grid_import(2_8)
++0.065600000000000006 grid_import(2_9)
++0.040300000000000002 grid_import(3_1)
++0.062399999999999997 grid_import(3_10)
++0.0499 grid_import(3_11)
++0.0402 grid_import(3_12)
++0.032399999999999998 grid_import(3_13)
++0.030200000000000001 grid_import(3_14)
++0.025999999999999999 grid_import(3_15)
++0.029999999999999999 grid_import(3_16)
++0.044999999999999998 grid_import(3_17)
++0.061699999999999998 grid_import(3_18)
++0.077100000000000002 grid_import(3_19)
++0.033099999999999997 grid_import(3_2)
++0.079699999999999993 grid_import(3_20)
++0.066199999999999995 grid_import(3_21)
++0.052900000000000003 grid_import(3_22)
++0.040099999999999997 grid_import(3_23)
++0.0223 grid_import(3_24)
++0.0229 grid_import(3_3)
++0.02 grid_import(3_4)
++0.014200000000000001 grid_import(3_5)
++0.014200000000000001 grid_import(3_6)
++0.0218 grid_import(3_7)
++0.0458 grid_import(3_8)
++0.065600000000000006 grid_import(3_9)
 
 s.t.
 
@@ -4580,958 +4220,628 @@ c_u_energy_limits_EVS_2(3_24)_:
 +1 EEV(3_24)
 <= 20
 
-c_u_cp_power_charge_limit(1_1_1_1)_:
+c_u_cp_power_charge_limit(1_1_1)_:
 +1 PEV(1_1)
 <= 0
 
-c_u_cp_power_charge_limit(1_1_1_2)_:
+c_u_cp_power_charge_limit(1_2_1)_:
 +1 PEV(1_2)
 <= 0
 
-c_u_cp_power_charge_limit(1_1_1_3)_:
+c_u_cp_power_charge_limit(1_3_1)_:
 +1 PEV(1_3)
 <= 0
 
-c_u_cp_power_charge_limit(1_1_1_4)_:
+c_u_cp_power_charge_limit(1_4_1)_:
 +1 PEV(1_4)
 <= 0
 
-c_u_cp_power_charge_limit(1_1_1_5)_:
+c_u_cp_power_charge_limit(1_5_1)_:
 +1 PEV(1_5)
 <= 0
 
-c_u_cp_power_charge_limit(1_1_1_6)_:
+c_u_cp_power_charge_limit(1_6_1)_:
 +1 PEV(1_6)
 <= 0
 
-c_u_cp_power_charge_limit(1_1_1_7)_:
+c_u_cp_power_charge_limit(1_7_1)_:
 +1 PEV(1_7)
 <= 0
 
-c_u_cp_power_charge_limit(1_1_1_8)_:
+c_u_cp_power_charge_limit(1_8_1)_:
 +1 PEV(1_8)
 -11 a(1_8)
 <= 0
 
-c_u_cp_power_charge_limit(1_1_1_9)_:
+c_u_cp_power_charge_limit(1_9_1)_:
 +1 PEV(1_9)
 -11 a(1_9)
 <= 0
 
-c_u_cp_power_charge_limit(1_1_1_10)_:
+c_u_cp_power_charge_limit(1_10_1)_:
 +1 PEV(1_10)
 -11 a(1_10)
 <= 0
 
-c_u_cp_power_charge_limit(1_1_1_11)_:
+c_u_cp_power_charge_limit(1_11_1)_:
 +1 PEV(1_11)
 -11 a(1_11)
 <= 0
 
-c_u_cp_power_charge_limit(1_1_1_12)_:
+c_u_cp_power_charge_limit(1_12_1)_:
 +1 PEV(1_12)
 -11 a(1_12)
 <= 0
 
-c_u_cp_power_charge_limit(1_1_1_13)_:
+c_u_cp_power_charge_limit(1_13_1)_:
 +1 PEV(1_13)
 <= 0
 
-c_u_cp_power_charge_limit(1_1_1_14)_:
+c_u_cp_power_charge_limit(1_14_1)_:
 +1 PEV(1_14)
 <= 0
 
-c_u_cp_power_charge_limit(1_1_1_15)_:
+c_u_cp_power_charge_limit(1_15_1)_:
 +1 PEV(1_15)
 -11 a(1_15)
 <= 0
 
-c_u_cp_power_charge_limit(1_1_1_16)_:
+c_u_cp_power_charge_limit(1_16_1)_:
 +1 PEV(1_16)
 -11 a(1_16)
 <= 0
 
-c_u_cp_power_charge_limit(1_1_1_17)_:
+c_u_cp_power_charge_limit(1_17_1)_:
 +1 PEV(1_17)
 -11 a(1_17)
 <= 0
 
-c_u_cp_power_charge_limit(1_1_1_18)_:
+c_u_cp_power_charge_limit(1_18_1)_:
 +1 PEV(1_18)
 -11 a(1_18)
 <= 0
 
-c_u_cp_power_charge_limit(1_1_1_19)_:
+c_u_cp_power_charge_limit(1_19_1)_:
 +1 PEV(1_19)
 <= 0
 
-c_u_cp_power_charge_limit(1_1_1_20)_:
+c_u_cp_power_charge_limit(1_20_1)_:
 +1 PEV(1_20)
 <= 0
 
-c_u_cp_power_charge_limit(1_1_1_21)_:
+c_u_cp_power_charge_limit(1_21_1)_:
 +1 PEV(1_21)
 <= 0
 
-c_u_cp_power_charge_limit(1_1_1_22)_:
+c_u_cp_power_charge_limit(1_22_1)_:
 +1 PEV(1_22)
 <= 0
 
-c_u_cp_power_charge_limit(1_1_1_23)_:
+c_u_cp_power_charge_limit(1_23_1)_:
 +1 PEV(1_23)
 <= 0
 
-c_u_cp_power_charge_limit(1_1_1_24)_:
+c_u_cp_power_charge_limit(1_24_1)_:
 +1 PEV(1_24)
 <= 0
 
-c_u_cp_power_charge_limit(1_1_2_1)_:
-+1 PEV(1_1)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_2_2)_:
-+1 PEV(1_2)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_2_3)_:
-+1 PEV(1_3)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_2_4)_:
-+1 PEV(1_4)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_2_5)_:
-+1 PEV(1_5)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_2_6)_:
-+1 PEV(1_6)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_2_7)_:
-+1 PEV(1_7)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_2_8)_:
-+1 PEV(1_8)
--11 a(1_8)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_2_9)_:
-+1 PEV(1_9)
--11 a(1_9)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_2_10)_:
-+1 PEV(1_10)
--11 a(1_10)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_2_11)_:
-+1 PEV(1_11)
--11 a(1_11)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_2_12)_:
-+1 PEV(1_12)
--11 a(1_12)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_2_13)_:
-+1 PEV(1_13)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_2_14)_:
-+1 PEV(1_14)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_2_15)_:
-+1 PEV(1_15)
--11 a(1_15)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_2_16)_:
-+1 PEV(1_16)
--11 a(1_16)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_2_17)_:
-+1 PEV(1_17)
--11 a(1_17)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_2_18)_:
-+1 PEV(1_18)
--11 a(1_18)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_2_19)_:
-+1 PEV(1_19)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_2_20)_:
-+1 PEV(1_20)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_2_21)_:
-+1 PEV(1_21)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_2_22)_:
-+1 PEV(1_22)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_2_23)_:
-+1 PEV(1_23)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_2_24)_:
-+1 PEV(1_24)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_3_1)_:
-+1 PEV(1_1)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_3_2)_:
-+1 PEV(1_2)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_3_3)_:
-+1 PEV(1_3)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_3_4)_:
-+1 PEV(1_4)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_3_5)_:
-+1 PEV(1_5)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_3_6)_:
-+1 PEV(1_6)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_3_7)_:
-+1 PEV(1_7)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_3_8)_:
-+1 PEV(1_8)
--11 a(1_8)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_3_9)_:
-+1 PEV(1_9)
--11 a(1_9)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_3_10)_:
-+1 PEV(1_10)
--11 a(1_10)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_3_11)_:
-+1 PEV(1_11)
--11 a(1_11)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_3_12)_:
-+1 PEV(1_12)
--11 a(1_12)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_3_13)_:
-+1 PEV(1_13)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_3_14)_:
-+1 PEV(1_14)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_3_15)_:
-+1 PEV(1_15)
--11 a(1_15)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_3_16)_:
-+1 PEV(1_16)
--11 a(1_16)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_3_17)_:
-+1 PEV(1_17)
--11 a(1_17)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_3_18)_:
-+1 PEV(1_18)
--11 a(1_18)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_3_19)_:
-+1 PEV(1_19)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_3_20)_:
-+1 PEV(1_20)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_3_21)_:
-+1 PEV(1_21)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_3_22)_:
-+1 PEV(1_22)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_3_23)_:
-+1 PEV(1_23)
-<= 0
-
-c_u_cp_power_charge_limit(1_1_3_24)_:
-+1 PEV(1_24)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_1_1)_:
+c_u_cp_power_charge_limit(2_1_2)_:
 +1 PEV(2_1)
 <= 0
 
-c_u_cp_power_charge_limit(2_2_1_2)_:
+c_u_cp_power_charge_limit(2_2_2)_:
 +1 PEV(2_2)
 <= 0
 
-c_u_cp_power_charge_limit(2_2_1_3)_:
+c_u_cp_power_charge_limit(2_3_2)_:
 +1 PEV(2_3)
 <= 0
 
-c_u_cp_power_charge_limit(2_2_1_4)_:
+c_u_cp_power_charge_limit(2_4_2)_:
 +1 PEV(2_4)
 <= 0
 
-c_u_cp_power_charge_limit(2_2_1_5)_:
+c_u_cp_power_charge_limit(2_5_2)_:
 +1 PEV(2_5)
 <= 0
 
-c_u_cp_power_charge_limit(2_2_1_6)_:
+c_u_cp_power_charge_limit(2_6_2)_:
 +1 PEV(2_6)
 <= 0
 
-c_u_cp_power_charge_limit(2_2_1_7)_:
+c_u_cp_power_charge_limit(2_7_2)_:
 +1 PEV(2_7)
 <= 0
 
-c_u_cp_power_charge_limit(2_2_1_8)_:
+c_u_cp_power_charge_limit(2_8_2)_:
 +1 PEV(2_8)
 -11 a(2_8)
 <= 0
 
-c_u_cp_power_charge_limit(2_2_1_9)_:
+c_u_cp_power_charge_limit(2_9_2)_:
 +1 PEV(2_9)
 -11 a(2_9)
 <= 0
 
-c_u_cp_power_charge_limit(2_2_1_10)_:
+c_u_cp_power_charge_limit(2_10_2)_:
 +1 PEV(2_10)
 -11 a(2_10)
 <= 0
 
-c_u_cp_power_charge_limit(2_2_1_11)_:
+c_u_cp_power_charge_limit(2_11_2)_:
 +1 PEV(2_11)
 -11 a(2_11)
 <= 0
 
-c_u_cp_power_charge_limit(2_2_1_12)_:
+c_u_cp_power_charge_limit(2_12_2)_:
 +1 PEV(2_12)
 -11 a(2_12)
 <= 0
 
-c_u_cp_power_charge_limit(2_2_1_13)_:
+c_u_cp_power_charge_limit(2_13_2)_:
 +1 PEV(2_13)
 <= 0
 
-c_u_cp_power_charge_limit(2_2_1_14)_:
+c_u_cp_power_charge_limit(2_14_2)_:
 +1 PEV(2_14)
 <= 0
 
-c_u_cp_power_charge_limit(2_2_1_15)_:
+c_u_cp_power_charge_limit(2_15_2)_:
 +1 PEV(2_15)
 -11 a(2_15)
 <= 0
 
-c_u_cp_power_charge_limit(2_2_1_16)_:
+c_u_cp_power_charge_limit(2_16_2)_:
 +1 PEV(2_16)
 -11 a(2_16)
 <= 0
 
-c_u_cp_power_charge_limit(2_2_1_17)_:
+c_u_cp_power_charge_limit(2_17_2)_:
 +1 PEV(2_17)
 -11 a(2_17)
 <= 0
 
-c_u_cp_power_charge_limit(2_2_1_18)_:
+c_u_cp_power_charge_limit(2_18_2)_:
 +1 PEV(2_18)
 -11 a(2_18)
 <= 0
 
-c_u_cp_power_charge_limit(2_2_1_19)_:
+c_u_cp_power_charge_limit(2_19_2)_:
 +1 PEV(2_19)
 <= 0
 
-c_u_cp_power_charge_limit(2_2_1_20)_:
+c_u_cp_power_charge_limit(2_20_2)_:
 +1 PEV(2_20)
 <= 0
 
-c_u_cp_power_charge_limit(2_2_1_21)_:
+c_u_cp_power_charge_limit(2_21_2)_:
 +1 PEV(2_21)
 <= 0
 
-c_u_cp_power_charge_limit(2_2_1_22)_:
+c_u_cp_power_charge_limit(2_22_2)_:
 +1 PEV(2_22)
 <= 0
 
-c_u_cp_power_charge_limit(2_2_1_23)_:
+c_u_cp_power_charge_limit(2_23_2)_:
 +1 PEV(2_23)
 <= 0
 
-c_u_cp_power_charge_limit(2_2_1_24)_:
+c_u_cp_power_charge_limit(2_24_2)_:
 +1 PEV(2_24)
 <= 0
 
-c_u_cp_power_charge_limit(2_2_2_1)_:
-+1 PEV(2_1)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_2_2)_:
-+1 PEV(2_2)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_2_3)_:
-+1 PEV(2_3)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_2_4)_:
-+1 PEV(2_4)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_2_5)_:
-+1 PEV(2_5)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_2_6)_:
-+1 PEV(2_6)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_2_7)_:
-+1 PEV(2_7)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_2_8)_:
-+1 PEV(2_8)
--11 a(2_8)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_2_9)_:
-+1 PEV(2_9)
--11 a(2_9)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_2_10)_:
-+1 PEV(2_10)
--11 a(2_10)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_2_11)_:
-+1 PEV(2_11)
--11 a(2_11)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_2_12)_:
-+1 PEV(2_12)
--11 a(2_12)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_2_13)_:
-+1 PEV(2_13)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_2_14)_:
-+1 PEV(2_14)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_2_15)_:
-+1 PEV(2_15)
--11 a(2_15)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_2_16)_:
-+1 PEV(2_16)
--11 a(2_16)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_2_17)_:
-+1 PEV(2_17)
--11 a(2_17)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_2_18)_:
-+1 PEV(2_18)
--11 a(2_18)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_2_19)_:
-+1 PEV(2_19)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_2_20)_:
-+1 PEV(2_20)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_2_21)_:
-+1 PEV(2_21)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_2_22)_:
-+1 PEV(2_22)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_2_23)_:
-+1 PEV(2_23)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_2_24)_:
-+1 PEV(2_24)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_3_1)_:
-+1 PEV(2_1)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_3_2)_:
-+1 PEV(2_2)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_3_3)_:
-+1 PEV(2_3)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_3_4)_:
-+1 PEV(2_4)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_3_5)_:
-+1 PEV(2_5)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_3_6)_:
-+1 PEV(2_6)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_3_7)_:
-+1 PEV(2_7)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_3_8)_:
-+1 PEV(2_8)
--11 a(2_8)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_3_9)_:
-+1 PEV(2_9)
--11 a(2_9)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_3_10)_:
-+1 PEV(2_10)
--11 a(2_10)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_3_11)_:
-+1 PEV(2_11)
--11 a(2_11)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_3_12)_:
-+1 PEV(2_12)
--11 a(2_12)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_3_13)_:
-+1 PEV(2_13)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_3_14)_:
-+1 PEV(2_14)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_3_15)_:
-+1 PEV(2_15)
--11 a(2_15)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_3_16)_:
-+1 PEV(2_16)
--11 a(2_16)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_3_17)_:
-+1 PEV(2_17)
--11 a(2_17)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_3_18)_:
-+1 PEV(2_18)
--11 a(2_18)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_3_19)_:
-+1 PEV(2_19)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_3_20)_:
-+1 PEV(2_20)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_3_21)_:
-+1 PEV(2_21)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_3_22)_:
-+1 PEV(2_22)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_3_23)_:
-+1 PEV(2_23)
-<= 0
-
-c_u_cp_power_charge_limit(2_2_3_24)_:
-+1 PEV(2_24)
-<= 0
-
-c_e_cp_power_charge_limit(3_3_1_1)_:
+c_e_cp_power_charge_limit(3_1_3)_:
 +1 PEV(3_1)
 = 0
 
-c_e_cp_power_charge_limit(3_3_1_2)_:
+c_e_cp_power_charge_limit(3_2_3)_:
 +1 PEV(3_2)
 = 0
 
-c_e_cp_power_charge_limit(3_3_1_3)_:
+c_e_cp_power_charge_limit(3_3_3)_:
 +1 PEV(3_3)
 = 0
 
-c_e_cp_power_charge_limit(3_3_1_4)_:
+c_e_cp_power_charge_limit(3_4_3)_:
 +1 PEV(3_4)
 = 0
 
-c_e_cp_power_charge_limit(3_3_1_5)_:
+c_e_cp_power_charge_limit(3_5_3)_:
 +1 PEV(3_5)
 = 0
 
-c_e_cp_power_charge_limit(3_3_1_6)_:
+c_e_cp_power_charge_limit(3_6_3)_:
 +1 PEV(3_6)
 = 0
 
-c_e_cp_power_charge_limit(3_3_1_7)_:
+c_e_cp_power_charge_limit(3_7_3)_:
 +1 PEV(3_7)
 -2.3999999999999999 a(3_7)
 = 0
 
-c_e_cp_power_charge_limit(3_3_1_8)_:
+c_e_cp_power_charge_limit(3_8_3)_:
 +1 PEV(3_8)
 -2.3999999999999999 a(3_8)
 = 0
 
-c_e_cp_power_charge_limit(3_3_1_9)_:
+c_e_cp_power_charge_limit(3_9_3)_:
 +1 PEV(3_9)
 -2.3999999999999999 a(3_9)
 = 0
 
-c_e_cp_power_charge_limit(3_3_1_10)_:
+c_e_cp_power_charge_limit(3_10_3)_:
 +1 PEV(3_10)
 -2.3999999999999999 a(3_10)
 = 0
 
-c_e_cp_power_charge_limit(3_3_1_11)_:
+c_e_cp_power_charge_limit(3_11_3)_:
 +1 PEV(3_11)
 -2.3999999999999999 a(3_11)
 = 0
 
-c_e_cp_power_charge_limit(3_3_1_12)_:
+c_e_cp_power_charge_limit(3_12_3)_:
 +1 PEV(3_12)
 -2.3999999999999999 a(3_12)
 = 0
 
-c_e_cp_power_charge_limit(3_3_1_13)_:
+c_e_cp_power_charge_limit(3_13_3)_:
 +1 PEV(3_13)
 -2.3999999999999999 a(3_13)
 = 0
 
-c_e_cp_power_charge_limit(3_3_1_14)_:
+c_e_cp_power_charge_limit(3_14_3)_:
 +1 PEV(3_14)
 -2.3999999999999999 a(3_14)
 = 0
 
-c_e_cp_power_charge_limit(3_3_1_15)_:
+c_e_cp_power_charge_limit(3_15_3)_:
 +1 PEV(3_15)
 -2.3999999999999999 a(3_15)
 = 0
 
-c_e_cp_power_charge_limit(3_3_1_16)_:
+c_e_cp_power_charge_limit(3_16_3)_:
 +1 PEV(3_16)
 -2.3999999999999999 a(3_16)
 = 0
 
-c_e_cp_power_charge_limit(3_3_1_17)_:
+c_e_cp_power_charge_limit(3_17_3)_:
 +1 PEV(3_17)
 -2.3999999999999999 a(3_17)
 = 0
 
-c_e_cp_power_charge_limit(3_3_1_18)_:
+c_e_cp_power_charge_limit(3_18_3)_:
 +1 PEV(3_18)
 -2.3999999999999999 a(3_18)
 = 0
 
-c_e_cp_power_charge_limit(3_3_1_19)_:
+c_e_cp_power_charge_limit(3_19_3)_:
 +1 PEV(3_19)
 = 0
 
-c_e_cp_power_charge_limit(3_3_1_20)_:
+c_e_cp_power_charge_limit(3_20_3)_:
 +1 PEV(3_20)
 = 0
 
-c_e_cp_power_charge_limit(3_3_1_21)_:
+c_e_cp_power_charge_limit(3_21_3)_:
 +1 PEV(3_21)
 = 0
 
-c_e_cp_power_charge_limit(3_3_1_22)_:
+c_e_cp_power_charge_limit(3_22_3)_:
 +1 PEV(3_22)
 = 0
 
-c_e_cp_power_charge_limit(3_3_1_23)_:
+c_e_cp_power_charge_limit(3_23_3)_:
 +1 PEV(3_23)
 = 0
 
-c_e_cp_power_charge_limit(3_3_1_24)_:
+c_e_cp_power_charge_limit(3_24_3)_:
 +1 PEV(3_24)
 = 0
 
-c_e_cp_power_charge_limit(3_3_2_1)_:
-+1 PEV(3_1)
+c_u_cp_power_discharge_limit(1_1_1)_:
++1 PEVdc(1_1)
+<= 0
+
+c_u_cp_power_discharge_limit(1_2_1)_:
++1 PEVdc(1_2)
+<= 0
+
+c_u_cp_power_discharge_limit(1_3_1)_:
++1 PEVdc(1_3)
+<= 0
+
+c_u_cp_power_discharge_limit(1_4_1)_:
++1 PEVdc(1_4)
+<= 0
+
+c_u_cp_power_discharge_limit(1_5_1)_:
++1 PEVdc(1_5)
+<= 0
+
+c_u_cp_power_discharge_limit(1_6_1)_:
++1 PEVdc(1_6)
+<= 0
+
+c_u_cp_power_discharge_limit(1_7_1)_:
++1 PEVdc(1_7)
+<= 0
+
+c_u_cp_power_discharge_limit(1_8_1)_:
++1 PEVdc(1_8)
+-11 b(1_8)
+<= 0
+
+c_u_cp_power_discharge_limit(1_9_1)_:
++1 PEVdc(1_9)
+-11 b(1_9)
+<= 0
+
+c_u_cp_power_discharge_limit(1_10_1)_:
++1 PEVdc(1_10)
+-11 b(1_10)
+<= 0
+
+c_u_cp_power_discharge_limit(1_11_1)_:
++1 PEVdc(1_11)
+-11 b(1_11)
+<= 0
+
+c_u_cp_power_discharge_limit(1_12_1)_:
++1 PEVdc(1_12)
+-11 b(1_12)
+<= 0
+
+c_u_cp_power_discharge_limit(1_13_1)_:
++1 PEVdc(1_13)
+<= 0
+
+c_u_cp_power_discharge_limit(1_14_1)_:
++1 PEVdc(1_14)
+<= 0
+
+c_u_cp_power_discharge_limit(1_15_1)_:
++1 PEVdc(1_15)
+-11 b(1_15)
+<= 0
+
+c_u_cp_power_discharge_limit(1_16_1)_:
++1 PEVdc(1_16)
+-11 b(1_16)
+<= 0
+
+c_u_cp_power_discharge_limit(1_17_1)_:
++1 PEVdc(1_17)
+-11 b(1_17)
+<= 0
+
+c_u_cp_power_discharge_limit(1_18_1)_:
++1 PEVdc(1_18)
+-11 b(1_18)
+<= 0
+
+c_u_cp_power_discharge_limit(1_19_1)_:
++1 PEVdc(1_19)
+<= 0
+
+c_u_cp_power_discharge_limit(1_20_1)_:
++1 PEVdc(1_20)
+<= 0
+
+c_u_cp_power_discharge_limit(1_21_1)_:
++1 PEVdc(1_21)
+<= 0
+
+c_u_cp_power_discharge_limit(1_22_1)_:
++1 PEVdc(1_22)
+<= 0
+
+c_u_cp_power_discharge_limit(1_23_1)_:
++1 PEVdc(1_23)
+<= 0
+
+c_u_cp_power_discharge_limit(1_24_1)_:
++1 PEVdc(1_24)
+<= 0
+
+c_u_cp_power_discharge_limit(2_1_2)_:
++1 PEVdc(2_1)
+<= 0
+
+c_u_cp_power_discharge_limit(2_2_2)_:
++1 PEVdc(2_2)
+<= 0
+
+c_u_cp_power_discharge_limit(2_3_2)_:
++1 PEVdc(2_3)
+<= 0
+
+c_u_cp_power_discharge_limit(2_4_2)_:
++1 PEVdc(2_4)
+<= 0
+
+c_u_cp_power_discharge_limit(2_5_2)_:
++1 PEVdc(2_5)
+<= 0
+
+c_u_cp_power_discharge_limit(2_6_2)_:
++1 PEVdc(2_6)
+<= 0
+
+c_u_cp_power_discharge_limit(2_7_2)_:
++1 PEVdc(2_7)
+<= 0
+
+c_u_cp_power_discharge_limit(2_8_2)_:
++1 PEVdc(2_8)
+-11 b(2_8)
+<= 0
+
+c_u_cp_power_discharge_limit(2_9_2)_:
++1 PEVdc(2_9)
+-11 b(2_9)
+<= 0
+
+c_u_cp_power_discharge_limit(2_10_2)_:
++1 PEVdc(2_10)
+-11 b(2_10)
+<= 0
+
+c_u_cp_power_discharge_limit(2_11_2)_:
++1 PEVdc(2_11)
+-11 b(2_11)
+<= 0
+
+c_u_cp_power_discharge_limit(2_12_2)_:
++1 PEVdc(2_12)
+-11 b(2_12)
+<= 0
+
+c_u_cp_power_discharge_limit(2_13_2)_:
++1 PEVdc(2_13)
+<= 0
+
+c_u_cp_power_discharge_limit(2_14_2)_:
++1 PEVdc(2_14)
+<= 0
+
+c_u_cp_power_discharge_limit(2_15_2)_:
++1 PEVdc(2_15)
+-11 b(2_15)
+<= 0
+
+c_u_cp_power_discharge_limit(2_16_2)_:
++1 PEVdc(2_16)
+-11 b(2_16)
+<= 0
+
+c_u_cp_power_discharge_limit(2_17_2)_:
++1 PEVdc(2_17)
+-11 b(2_17)
+<= 0
+
+c_u_cp_power_discharge_limit(2_18_2)_:
++1 PEVdc(2_18)
+-11 b(2_18)
+<= 0
+
+c_u_cp_power_discharge_limit(2_19_2)_:
++1 PEVdc(2_19)
+<= 0
+
+c_u_cp_power_discharge_limit(2_20_2)_:
++1 PEVdc(2_20)
+<= 0
+
+c_u_cp_power_discharge_limit(2_21_2)_:
++1 PEVdc(2_21)
+<= 0
+
+c_u_cp_power_discharge_limit(2_22_2)_:
++1 PEVdc(2_22)
+<= 0
+
+c_u_cp_power_discharge_limit(2_23_2)_:
++1 PEVdc(2_23)
+<= 0
+
+c_u_cp_power_discharge_limit(2_24_2)_:
++1 PEVdc(2_24)
+<= 0
+
+c_e_cp_power_discharge_limit(3_1_3)_:
++1 PEVdc(3_1)
 = 0
 
-c_e_cp_power_charge_limit(3_3_2_2)_:
-+1 PEV(3_2)
+c_e_cp_power_discharge_limit(3_2_3)_:
++1 PEVdc(3_2)
 = 0
 
-c_e_cp_power_charge_limit(3_3_2_3)_:
-+1 PEV(3_3)
+c_e_cp_power_discharge_limit(3_3_3)_:
++1 PEVdc(3_3)
 = 0
 
-c_e_cp_power_charge_limit(3_3_2_4)_:
-+1 PEV(3_4)
+c_e_cp_power_discharge_limit(3_4_3)_:
++1 PEVdc(3_4)
 = 0
 
-c_e_cp_power_charge_limit(3_3_2_5)_:
-+1 PEV(3_5)
+c_e_cp_power_discharge_limit(3_5_3)_:
++1 PEVdc(3_5)
 = 0
 
-c_e_cp_power_charge_limit(3_3_2_6)_:
-+1 PEV(3_6)
+c_e_cp_power_discharge_limit(3_6_3)_:
++1 PEVdc(3_6)
 = 0
 
-c_e_cp_power_charge_limit(3_3_2_7)_:
-+1 PEV(3_7)
--2.3999999999999999 a(3_7)
+c_e_cp_power_discharge_limit(3_7_3)_:
++1 PEVdc(3_7)
 = 0
 
-c_e_cp_power_charge_limit(3_3_2_8)_:
-+1 PEV(3_8)
--2.3999999999999999 a(3_8)
+c_e_cp_power_discharge_limit(3_8_3)_:
++1 PEVdc(3_8)
 = 0
 
-c_e_cp_power_charge_limit(3_3_2_9)_:
-+1 PEV(3_9)
--2.3999999999999999 a(3_9)
+c_e_cp_power_discharge_limit(3_9_3)_:
++1 PEVdc(3_9)
 = 0
 
-c_e_cp_power_charge_limit(3_3_2_10)_:
-+1 PEV(3_10)
--2.3999999999999999 a(3_10)
+c_e_cp_power_discharge_limit(3_10_3)_:
++1 PEVdc(3_10)
 = 0
 
-c_e_cp_power_charge_limit(3_3_2_11)_:
-+1 PEV(3_11)
--2.3999999999999999 a(3_11)
+c_e_cp_power_discharge_limit(3_11_3)_:
++1 PEVdc(3_11)
 = 0
 
-c_e_cp_power_charge_limit(3_3_2_12)_:
-+1 PEV(3_12)
--2.3999999999999999 a(3_12)
+c_e_cp_power_discharge_limit(3_12_3)_:
++1 PEVdc(3_12)
 = 0
 
-c_e_cp_power_charge_limit(3_3_2_13)_:
-+1 PEV(3_13)
--2.3999999999999999 a(3_13)
+c_e_cp_power_discharge_limit(3_13_3)_:
++1 PEVdc(3_13)
 = 0
 
-c_e_cp_power_charge_limit(3_3_2_14)_:
-+1 PEV(3_14)
--2.3999999999999999 a(3_14)
+c_e_cp_power_discharge_limit(3_14_3)_:
++1 PEVdc(3_14)
 = 0
 
-c_e_cp_power_charge_limit(3_3_2_15)_:
-+1 PEV(3_15)
--2.3999999999999999 a(3_15)
+c_e_cp_power_discharge_limit(3_15_3)_:
++1 PEVdc(3_15)
 = 0
 
-c_e_cp_power_charge_limit(3_3_2_16)_:
-+1 PEV(3_16)
--2.3999999999999999 a(3_16)
+c_e_cp_power_discharge_limit(3_16_3)_:
++1 PEVdc(3_16)
 = 0
 
-c_e_cp_power_charge_limit(3_3_2_17)_:
-+1 PEV(3_17)
--2.3999999999999999 a(3_17)
+c_e_cp_power_discharge_limit(3_17_3)_:
++1 PEVdc(3_17)
 = 0
 
-c_e_cp_power_charge_limit(3_3_2_18)_:
-+1 PEV(3_18)
--2.3999999999999999 a(3_18)
+c_e_cp_power_discharge_limit(3_18_3)_:
++1 PEVdc(3_18)
 = 0
 
-c_e_cp_power_charge_limit(3_3_2_19)_:
-+1 PEV(3_19)
+c_e_cp_power_discharge_limit(3_19_3)_:
++1 PEVdc(3_19)
 = 0
 
-c_e_cp_power_charge_limit(3_3_2_20)_:
-+1 PEV(3_20)
+c_e_cp_power_discharge_limit(3_20_3)_:
++1 PEVdc(3_20)
 = 0
 
-c_e_cp_power_charge_limit(3_3_2_21)_:
-+1 PEV(3_21)
+c_e_cp_power_discharge_limit(3_21_3)_:
++1 PEVdc(3_21)
 = 0
 
-c_e_cp_power_charge_limit(3_3_2_22)_:
-+1 PEV(3_22)
+c_e_cp_power_discharge_limit(3_22_3)_:
++1 PEVdc(3_22)
 = 0
 
-c_e_cp_power_charge_limit(3_3_2_23)_:
-+1 PEV(3_23)
+c_e_cp_power_discharge_limit(3_23_3)_:
++1 PEVdc(3_23)
 = 0
 
-c_e_cp_power_charge_limit(3_3_2_24)_:
-+1 PEV(3_24)
-= 0
-
-c_e_cp_power_charge_limit(3_3_3_1)_:
-+1 PEV(3_1)
-= 0
-
-c_e_cp_power_charge_limit(3_3_3_2)_:
-+1 PEV(3_2)
-= 0
-
-c_e_cp_power_charge_limit(3_3_3_3)_:
-+1 PEV(3_3)
-= 0
-
-c_e_cp_power_charge_limit(3_3_3_4)_:
-+1 PEV(3_4)
-= 0
-
-c_e_cp_power_charge_limit(3_3_3_5)_:
-+1 PEV(3_5)
-= 0
-
-c_e_cp_power_charge_limit(3_3_3_6)_:
-+1 PEV(3_6)
-= 0
-
-c_e_cp_power_charge_limit(3_3_3_7)_:
-+1 PEV(3_7)
--2.3999999999999999 a(3_7)
-= 0
-
-c_e_cp_power_charge_limit(3_3_3_8)_:
-+1 PEV(3_8)
--2.3999999999999999 a(3_8)
-= 0
-
-c_e_cp_power_charge_limit(3_3_3_9)_:
-+1 PEV(3_9)
--2.3999999999999999 a(3_9)
-= 0
-
-c_e_cp_power_charge_limit(3_3_3_10)_:
-+1 PEV(3_10)
--2.3999999999999999 a(3_10)
-= 0
-
-c_e_cp_power_charge_limit(3_3_3_11)_:
-+1 PEV(3_11)
--2.3999999999999999 a(3_11)
-= 0
-
-c_e_cp_power_charge_limit(3_3_3_12)_:
-+1 PEV(3_12)
--2.3999999999999999 a(3_12)
-= 0
-
-c_e_cp_power_charge_limit(3_3_3_13)_:
-+1 PEV(3_13)
--2.3999999999999999 a(3_13)
-= 0
-
-c_e_cp_power_charge_limit(3_3_3_14)_:
-+1 PEV(3_14)
--2.3999999999999999 a(3_14)
-= 0
-
-c_e_cp_power_charge_limit(3_3_3_15)_:
-+1 PEV(3_15)
--2.3999999999999999 a(3_15)
-= 0
-
-c_e_cp_power_charge_limit(3_3_3_16)_:
-+1 PEV(3_16)
--2.3999999999999999 a(3_16)
-= 0
-
-c_e_cp_power_charge_limit(3_3_3_17)_:
-+1 PEV(3_17)
--2.3999999999999999 a(3_17)
-= 0
-
-c_e_cp_power_charge_limit(3_3_3_18)_:
-+1 PEV(3_18)
--2.3999999999999999 a(3_18)
-= 0
-
-c_e_cp_power_charge_limit(3_3_3_19)_:
-+1 PEV(3_19)
-= 0
-
-c_e_cp_power_charge_limit(3_3_3_20)_:
-+1 PEV(3_20)
-= 0
-
-c_e_cp_power_charge_limit(3_3_3_21)_:
-+1 PEV(3_21)
-= 0
-
-c_e_cp_power_charge_limit(3_3_3_22)_:
-+1 PEV(3_22)
-= 0
-
-c_e_cp_power_charge_limit(3_3_3_23)_:
-+1 PEV(3_23)
-= 0
-
-c_e_cp_power_charge_limit(3_3_3_24)_:
-+1 PEV(3_24)
+c_e_cp_power_discharge_limit(3_24_3)_:
++1 PEVdc(3_24)
 = 0
 
 c_e__cp_power_consumption(1_1_1)_:
@@ -5892,924 +5202,6 @@ c_e__cp_power_consumption(3_23_3)_:
 c_e__cp_power_consumption(3_24_3)_:
 +1 PCP(3_24)
 -1 PEV(3_24)
-= 0
-
-c_u_cp_power_discharge_limit(1_1_1_1)_:
-+1 PEVdc(1_1)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_1_2)_:
-+1 PEVdc(1_2)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_1_3)_:
-+1 PEVdc(1_3)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_1_4)_:
-+1 PEVdc(1_4)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_1_5)_:
-+1 PEVdc(1_5)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_1_6)_:
-+1 PEVdc(1_6)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_1_7)_:
-+1 PEVdc(1_7)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_1_8)_:
-+1 PEVdc(1_8)
--11 b(1_8)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_1_9)_:
-+1 PEVdc(1_9)
--11 b(1_9)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_1_10)_:
-+1 PEVdc(1_10)
--11 b(1_10)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_1_11)_:
-+1 PEVdc(1_11)
--11 b(1_11)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_1_12)_:
-+1 PEVdc(1_12)
--11 b(1_12)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_1_13)_:
-+1 PEVdc(1_13)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_1_14)_:
-+1 PEVdc(1_14)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_1_15)_:
-+1 PEVdc(1_15)
--11 b(1_15)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_1_16)_:
-+1 PEVdc(1_16)
--11 b(1_16)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_1_17)_:
-+1 PEVdc(1_17)
--11 b(1_17)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_1_18)_:
-+1 PEVdc(1_18)
--11 b(1_18)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_1_19)_:
-+1 PEVdc(1_19)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_1_20)_:
-+1 PEVdc(1_20)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_1_21)_:
-+1 PEVdc(1_21)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_1_22)_:
-+1 PEVdc(1_22)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_1_23)_:
-+1 PEVdc(1_23)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_1_24)_:
-+1 PEVdc(1_24)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_2_1)_:
-+1 PEVdc(1_1)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_2_2)_:
-+1 PEVdc(1_2)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_2_3)_:
-+1 PEVdc(1_3)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_2_4)_:
-+1 PEVdc(1_4)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_2_5)_:
-+1 PEVdc(1_5)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_2_6)_:
-+1 PEVdc(1_6)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_2_7)_:
-+1 PEVdc(1_7)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_2_8)_:
-+1 PEVdc(1_8)
--11 b(1_8)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_2_9)_:
-+1 PEVdc(1_9)
--11 b(1_9)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_2_10)_:
-+1 PEVdc(1_10)
--11 b(1_10)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_2_11)_:
-+1 PEVdc(1_11)
--11 b(1_11)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_2_12)_:
-+1 PEVdc(1_12)
--11 b(1_12)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_2_13)_:
-+1 PEVdc(1_13)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_2_14)_:
-+1 PEVdc(1_14)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_2_15)_:
-+1 PEVdc(1_15)
--11 b(1_15)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_2_16)_:
-+1 PEVdc(1_16)
--11 b(1_16)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_2_17)_:
-+1 PEVdc(1_17)
--11 b(1_17)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_2_18)_:
-+1 PEVdc(1_18)
--11 b(1_18)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_2_19)_:
-+1 PEVdc(1_19)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_2_20)_:
-+1 PEVdc(1_20)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_2_21)_:
-+1 PEVdc(1_21)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_2_22)_:
-+1 PEVdc(1_22)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_2_23)_:
-+1 PEVdc(1_23)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_2_24)_:
-+1 PEVdc(1_24)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_3_1)_:
-+1 PEVdc(1_1)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_3_2)_:
-+1 PEVdc(1_2)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_3_3)_:
-+1 PEVdc(1_3)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_3_4)_:
-+1 PEVdc(1_4)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_3_5)_:
-+1 PEVdc(1_5)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_3_6)_:
-+1 PEVdc(1_6)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_3_7)_:
-+1 PEVdc(1_7)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_3_8)_:
-+1 PEVdc(1_8)
--11 b(1_8)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_3_9)_:
-+1 PEVdc(1_9)
--11 b(1_9)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_3_10)_:
-+1 PEVdc(1_10)
--11 b(1_10)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_3_11)_:
-+1 PEVdc(1_11)
--11 b(1_11)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_3_12)_:
-+1 PEVdc(1_12)
--11 b(1_12)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_3_13)_:
-+1 PEVdc(1_13)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_3_14)_:
-+1 PEVdc(1_14)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_3_15)_:
-+1 PEVdc(1_15)
--11 b(1_15)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_3_16)_:
-+1 PEVdc(1_16)
--11 b(1_16)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_3_17)_:
-+1 PEVdc(1_17)
--11 b(1_17)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_3_18)_:
-+1 PEVdc(1_18)
--11 b(1_18)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_3_19)_:
-+1 PEVdc(1_19)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_3_20)_:
-+1 PEVdc(1_20)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_3_21)_:
-+1 PEVdc(1_21)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_3_22)_:
-+1 PEVdc(1_22)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_3_23)_:
-+1 PEVdc(1_23)
-<= 0
-
-c_u_cp_power_discharge_limit(1_1_3_24)_:
-+1 PEVdc(1_24)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_1_1)_:
-+1 PEVdc(2_1)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_1_2)_:
-+1 PEVdc(2_2)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_1_3)_:
-+1 PEVdc(2_3)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_1_4)_:
-+1 PEVdc(2_4)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_1_5)_:
-+1 PEVdc(2_5)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_1_6)_:
-+1 PEVdc(2_6)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_1_7)_:
-+1 PEVdc(2_7)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_1_8)_:
-+1 PEVdc(2_8)
--11 b(2_8)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_1_9)_:
-+1 PEVdc(2_9)
--11 b(2_9)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_1_10)_:
-+1 PEVdc(2_10)
--11 b(2_10)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_1_11)_:
-+1 PEVdc(2_11)
--11 b(2_11)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_1_12)_:
-+1 PEVdc(2_12)
--11 b(2_12)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_1_13)_:
-+1 PEVdc(2_13)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_1_14)_:
-+1 PEVdc(2_14)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_1_15)_:
-+1 PEVdc(2_15)
--11 b(2_15)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_1_16)_:
-+1 PEVdc(2_16)
--11 b(2_16)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_1_17)_:
-+1 PEVdc(2_17)
--11 b(2_17)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_1_18)_:
-+1 PEVdc(2_18)
--11 b(2_18)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_1_19)_:
-+1 PEVdc(2_19)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_1_20)_:
-+1 PEVdc(2_20)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_1_21)_:
-+1 PEVdc(2_21)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_1_22)_:
-+1 PEVdc(2_22)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_1_23)_:
-+1 PEVdc(2_23)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_1_24)_:
-+1 PEVdc(2_24)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_2_1)_:
-+1 PEVdc(2_1)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_2_2)_:
-+1 PEVdc(2_2)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_2_3)_:
-+1 PEVdc(2_3)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_2_4)_:
-+1 PEVdc(2_4)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_2_5)_:
-+1 PEVdc(2_5)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_2_6)_:
-+1 PEVdc(2_6)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_2_7)_:
-+1 PEVdc(2_7)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_2_8)_:
-+1 PEVdc(2_8)
--11 b(2_8)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_2_9)_:
-+1 PEVdc(2_9)
--11 b(2_9)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_2_10)_:
-+1 PEVdc(2_10)
--11 b(2_10)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_2_11)_:
-+1 PEVdc(2_11)
--11 b(2_11)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_2_12)_:
-+1 PEVdc(2_12)
--11 b(2_12)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_2_13)_:
-+1 PEVdc(2_13)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_2_14)_:
-+1 PEVdc(2_14)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_2_15)_:
-+1 PEVdc(2_15)
--11 b(2_15)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_2_16)_:
-+1 PEVdc(2_16)
--11 b(2_16)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_2_17)_:
-+1 PEVdc(2_17)
--11 b(2_17)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_2_18)_:
-+1 PEVdc(2_18)
--11 b(2_18)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_2_19)_:
-+1 PEVdc(2_19)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_2_20)_:
-+1 PEVdc(2_20)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_2_21)_:
-+1 PEVdc(2_21)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_2_22)_:
-+1 PEVdc(2_22)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_2_23)_:
-+1 PEVdc(2_23)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_2_24)_:
-+1 PEVdc(2_24)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_3_1)_:
-+1 PEVdc(2_1)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_3_2)_:
-+1 PEVdc(2_2)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_3_3)_:
-+1 PEVdc(2_3)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_3_4)_:
-+1 PEVdc(2_4)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_3_5)_:
-+1 PEVdc(2_5)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_3_6)_:
-+1 PEVdc(2_6)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_3_7)_:
-+1 PEVdc(2_7)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_3_8)_:
-+1 PEVdc(2_8)
--11 b(2_8)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_3_9)_:
-+1 PEVdc(2_9)
--11 b(2_9)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_3_10)_:
-+1 PEVdc(2_10)
--11 b(2_10)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_3_11)_:
-+1 PEVdc(2_11)
--11 b(2_11)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_3_12)_:
-+1 PEVdc(2_12)
--11 b(2_12)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_3_13)_:
-+1 PEVdc(2_13)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_3_14)_:
-+1 PEVdc(2_14)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_3_15)_:
-+1 PEVdc(2_15)
--11 b(2_15)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_3_16)_:
-+1 PEVdc(2_16)
--11 b(2_16)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_3_17)_:
-+1 PEVdc(2_17)
--11 b(2_17)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_3_18)_:
-+1 PEVdc(2_18)
--11 b(2_18)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_3_19)_:
-+1 PEVdc(2_19)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_3_20)_:
-+1 PEVdc(2_20)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_3_21)_:
-+1 PEVdc(2_21)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_3_22)_:
-+1 PEVdc(2_22)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_3_23)_:
-+1 PEVdc(2_23)
-<= 0
-
-c_u_cp_power_discharge_limit(2_2_3_24)_:
-+1 PEVdc(2_24)
-<= 0
-
-c_e_cp_power_discharge_limit(3_3_1_1)_:
-+1 PEVdc(3_1)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_1_2)_:
-+1 PEVdc(3_2)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_1_3)_:
-+1 PEVdc(3_3)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_1_4)_:
-+1 PEVdc(3_4)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_1_5)_:
-+1 PEVdc(3_5)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_1_6)_:
-+1 PEVdc(3_6)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_1_7)_:
-+1 PEVdc(3_7)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_1_8)_:
-+1 PEVdc(3_8)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_1_9)_:
-+1 PEVdc(3_9)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_1_10)_:
-+1 PEVdc(3_10)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_1_11)_:
-+1 PEVdc(3_11)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_1_12)_:
-+1 PEVdc(3_12)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_1_13)_:
-+1 PEVdc(3_13)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_1_14)_:
-+1 PEVdc(3_14)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_1_15)_:
-+1 PEVdc(3_15)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_1_16)_:
-+1 PEVdc(3_16)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_1_17)_:
-+1 PEVdc(3_17)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_1_18)_:
-+1 PEVdc(3_18)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_1_19)_:
-+1 PEVdc(3_19)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_1_20)_:
-+1 PEVdc(3_20)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_1_21)_:
-+1 PEVdc(3_21)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_1_22)_:
-+1 PEVdc(3_22)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_1_23)_:
-+1 PEVdc(3_23)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_1_24)_:
-+1 PEVdc(3_24)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_2_1)_:
-+1 PEVdc(3_1)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_2_2)_:
-+1 PEVdc(3_2)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_2_3)_:
-+1 PEVdc(3_3)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_2_4)_:
-+1 PEVdc(3_4)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_2_5)_:
-+1 PEVdc(3_5)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_2_6)_:
-+1 PEVdc(3_6)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_2_7)_:
-+1 PEVdc(3_7)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_2_8)_:
-+1 PEVdc(3_8)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_2_9)_:
-+1 PEVdc(3_9)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_2_10)_:
-+1 PEVdc(3_10)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_2_11)_:
-+1 PEVdc(3_11)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_2_12)_:
-+1 PEVdc(3_12)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_2_13)_:
-+1 PEVdc(3_13)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_2_14)_:
-+1 PEVdc(3_14)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_2_15)_:
-+1 PEVdc(3_15)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_2_16)_:
-+1 PEVdc(3_16)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_2_17)_:
-+1 PEVdc(3_17)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_2_18)_:
-+1 PEVdc(3_18)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_2_19)_:
-+1 PEVdc(3_19)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_2_20)_:
-+1 PEVdc(3_20)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_2_21)_:
-+1 PEVdc(3_21)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_2_22)_:
-+1 PEVdc(3_22)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_2_23)_:
-+1 PEVdc(3_23)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_2_24)_:
-+1 PEVdc(3_24)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_3_1)_:
-+1 PEVdc(3_1)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_3_2)_:
-+1 PEVdc(3_2)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_3_3)_:
-+1 PEVdc(3_3)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_3_4)_:
-+1 PEVdc(3_4)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_3_5)_:
-+1 PEVdc(3_5)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_3_6)_:
-+1 PEVdc(3_6)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_3_7)_:
-+1 PEVdc(3_7)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_3_8)_:
-+1 PEVdc(3_8)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_3_9)_:
-+1 PEVdc(3_9)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_3_10)_:
-+1 PEVdc(3_10)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_3_11)_:
-+1 PEVdc(3_11)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_3_12)_:
-+1 PEVdc(3_12)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_3_13)_:
-+1 PEVdc(3_13)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_3_14)_:
-+1 PEVdc(3_14)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_3_15)_:
-+1 PEVdc(3_15)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_3_16)_:
-+1 PEVdc(3_16)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_3_17)_:
-+1 PEVdc(3_17)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_3_18)_:
-+1 PEVdc(3_18)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_3_19)_:
-+1 PEVdc(3_19)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_3_20)_:
-+1 PEVdc(3_20)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_3_21)_:
-+1 PEVdc(3_21)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_3_22)_:
-+1 PEVdc(3_22)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_3_23)_:
-+1 PEVdc(3_23)
-= 0
-
-c_e_cp_power_discharge_limit(3_3_3_24)_:
-+1 PEVdc(3_24)
 = 0
 
 c_e__cp_power_discharging(1_1_1)_:
@@ -7174,768 +5566,720 @@ c_e__cp_power_discharging(3_24_3)_:
 
 c_u_cs_power_charging_limit(1_1_1)_:
 +1 PCP(1_1)
-+1 PCP(2_1)
-+1 PCP(3_1)
 -1 PCPdc(1_1)
--1 PCPdc(2_1)
--1 PCPdc(3_1)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(1_2_1)_:
-+1 PCP(1_1)
 +1 PCP(2_1)
-+1 PCP(3_1)
--1 PCPdc(1_1)
 -1 PCPdc(2_1)
--1 PCPdc(3_1)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(1_3_1)_:
-+1 PCP(1_1)
-+1 PCP(2_1)
 +1 PCP(3_1)
--1 PCPdc(1_1)
--1 PCPdc(2_1)
 -1 PCPdc(3_1)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(2_1_1)_:
 +1 PCP(1_2)
-+1 PCP(2_2)
-+1 PCP(3_2)
 -1 PCPdc(1_2)
--1 PCPdc(2_2)
--1 PCPdc(3_2)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(2_2_1)_:
-+1 PCP(1_2)
 +1 PCP(2_2)
-+1 PCP(3_2)
--1 PCPdc(1_2)
 -1 PCPdc(2_2)
--1 PCPdc(3_2)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(2_3_1)_:
-+1 PCP(1_2)
-+1 PCP(2_2)
 +1 PCP(3_2)
--1 PCPdc(1_2)
--1 PCPdc(2_2)
 -1 PCPdc(3_2)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(3_1_1)_:
 +1 PCP(1_3)
-+1 PCP(2_3)
-+1 PCP(3_3)
 -1 PCPdc(1_3)
--1 PCPdc(2_3)
--1 PCPdc(3_3)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(3_2_1)_:
-+1 PCP(1_3)
 +1 PCP(2_3)
-+1 PCP(3_3)
--1 PCPdc(1_3)
 -1 PCPdc(2_3)
--1 PCPdc(3_3)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(3_3_1)_:
-+1 PCP(1_3)
-+1 PCP(2_3)
 +1 PCP(3_3)
--1 PCPdc(1_3)
--1 PCPdc(2_3)
 -1 PCPdc(3_3)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(4_1_1)_:
 +1 PCP(1_4)
-+1 PCP(2_4)
-+1 PCP(3_4)
 -1 PCPdc(1_4)
--1 PCPdc(2_4)
--1 PCPdc(3_4)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(4_2_1)_:
-+1 PCP(1_4)
 +1 PCP(2_4)
-+1 PCP(3_4)
--1 PCPdc(1_4)
 -1 PCPdc(2_4)
--1 PCPdc(3_4)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(4_3_1)_:
-+1 PCP(1_4)
-+1 PCP(2_4)
 +1 PCP(3_4)
--1 PCPdc(1_4)
--1 PCPdc(2_4)
 -1 PCPdc(3_4)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(5_1_1)_:
 +1 PCP(1_5)
-+1 PCP(2_5)
-+1 PCP(3_5)
 -1 PCPdc(1_5)
--1 PCPdc(2_5)
--1 PCPdc(3_5)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(5_2_1)_:
-+1 PCP(1_5)
 +1 PCP(2_5)
-+1 PCP(3_5)
--1 PCPdc(1_5)
 -1 PCPdc(2_5)
--1 PCPdc(3_5)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(5_3_1)_:
-+1 PCP(1_5)
-+1 PCP(2_5)
 +1 PCP(3_5)
--1 PCPdc(1_5)
--1 PCPdc(2_5)
 -1 PCPdc(3_5)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(6_1_1)_:
 +1 PCP(1_6)
-+1 PCP(2_6)
-+1 PCP(3_6)
 -1 PCPdc(1_6)
--1 PCPdc(2_6)
--1 PCPdc(3_6)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(6_2_1)_:
-+1 PCP(1_6)
 +1 PCP(2_6)
-+1 PCP(3_6)
--1 PCPdc(1_6)
 -1 PCPdc(2_6)
--1 PCPdc(3_6)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(6_3_1)_:
-+1 PCP(1_6)
-+1 PCP(2_6)
 +1 PCP(3_6)
--1 PCPdc(1_6)
--1 PCPdc(2_6)
 -1 PCPdc(3_6)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(7_1_1)_:
 +1 PCP(1_7)
-+1 PCP(2_7)
-+1 PCP(3_7)
 -1 PCPdc(1_7)
--1 PCPdc(2_7)
--1 PCPdc(3_7)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(7_2_1)_:
-+1 PCP(1_7)
 +1 PCP(2_7)
-+1 PCP(3_7)
--1 PCPdc(1_7)
 -1 PCPdc(2_7)
--1 PCPdc(3_7)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(7_3_1)_:
-+1 PCP(1_7)
-+1 PCP(2_7)
 +1 PCP(3_7)
--1 PCPdc(1_7)
--1 PCPdc(2_7)
 -1 PCPdc(3_7)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(8_1_1)_:
 +1 PCP(1_8)
-+1 PCP(2_8)
-+1 PCP(3_8)
 -1 PCPdc(1_8)
--1 PCPdc(2_8)
--1 PCPdc(3_8)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(8_2_1)_:
-+1 PCP(1_8)
 +1 PCP(2_8)
-+1 PCP(3_8)
--1 PCPdc(1_8)
 -1 PCPdc(2_8)
--1 PCPdc(3_8)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(8_3_1)_:
-+1 PCP(1_8)
-+1 PCP(2_8)
 +1 PCP(3_8)
--1 PCPdc(1_8)
--1 PCPdc(2_8)
 -1 PCPdc(3_8)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(9_1_1)_:
 +1 PCP(1_9)
-+1 PCP(2_9)
-+1 PCP(3_9)
 -1 PCPdc(1_9)
--1 PCPdc(2_9)
--1 PCPdc(3_9)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(9_2_1)_:
-+1 PCP(1_9)
 +1 PCP(2_9)
-+1 PCP(3_9)
--1 PCPdc(1_9)
 -1 PCPdc(2_9)
--1 PCPdc(3_9)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(9_3_1)_:
-+1 PCP(1_9)
-+1 PCP(2_9)
 +1 PCP(3_9)
--1 PCPdc(1_9)
--1 PCPdc(2_9)
 -1 PCPdc(3_9)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(10_1_1)_:
 +1 PCP(1_10)
-+1 PCP(2_10)
-+1 PCP(3_10)
 -1 PCPdc(1_10)
--1 PCPdc(2_10)
--1 PCPdc(3_10)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(10_2_1)_:
-+1 PCP(1_10)
 +1 PCP(2_10)
-+1 PCP(3_10)
--1 PCPdc(1_10)
 -1 PCPdc(2_10)
--1 PCPdc(3_10)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(10_3_1)_:
-+1 PCP(1_10)
-+1 PCP(2_10)
 +1 PCP(3_10)
--1 PCPdc(1_10)
--1 PCPdc(2_10)
 -1 PCPdc(3_10)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(11_1_1)_:
 +1 PCP(1_11)
-+1 PCP(2_11)
-+1 PCP(3_11)
 -1 PCPdc(1_11)
--1 PCPdc(2_11)
--1 PCPdc(3_11)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(11_2_1)_:
-+1 PCP(1_11)
 +1 PCP(2_11)
-+1 PCP(3_11)
--1 PCPdc(1_11)
 -1 PCPdc(2_11)
--1 PCPdc(3_11)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(11_3_1)_:
-+1 PCP(1_11)
-+1 PCP(2_11)
 +1 PCP(3_11)
--1 PCPdc(1_11)
--1 PCPdc(2_11)
 -1 PCPdc(3_11)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(12_1_1)_:
 +1 PCP(1_12)
-+1 PCP(2_12)
-+1 PCP(3_12)
 -1 PCPdc(1_12)
--1 PCPdc(2_12)
--1 PCPdc(3_12)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(12_2_1)_:
-+1 PCP(1_12)
 +1 PCP(2_12)
-+1 PCP(3_12)
--1 PCPdc(1_12)
 -1 PCPdc(2_12)
--1 PCPdc(3_12)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(12_3_1)_:
-+1 PCP(1_12)
-+1 PCP(2_12)
 +1 PCP(3_12)
--1 PCPdc(1_12)
--1 PCPdc(2_12)
 -1 PCPdc(3_12)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(13_1_1)_:
 +1 PCP(1_13)
-+1 PCP(2_13)
-+1 PCP(3_13)
 -1 PCPdc(1_13)
--1 PCPdc(2_13)
--1 PCPdc(3_13)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(13_2_1)_:
-+1 PCP(1_13)
 +1 PCP(2_13)
-+1 PCP(3_13)
--1 PCPdc(1_13)
 -1 PCPdc(2_13)
--1 PCPdc(3_13)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(13_3_1)_:
-+1 PCP(1_13)
-+1 PCP(2_13)
 +1 PCP(3_13)
--1 PCPdc(1_13)
--1 PCPdc(2_13)
 -1 PCPdc(3_13)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(14_1_1)_:
 +1 PCP(1_14)
-+1 PCP(2_14)
-+1 PCP(3_14)
 -1 PCPdc(1_14)
--1 PCPdc(2_14)
--1 PCPdc(3_14)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(14_2_1)_:
-+1 PCP(1_14)
 +1 PCP(2_14)
-+1 PCP(3_14)
--1 PCPdc(1_14)
 -1 PCPdc(2_14)
--1 PCPdc(3_14)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(14_3_1)_:
-+1 PCP(1_14)
-+1 PCP(2_14)
 +1 PCP(3_14)
--1 PCPdc(1_14)
--1 PCPdc(2_14)
 -1 PCPdc(3_14)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(15_1_1)_:
 +1 PCP(1_15)
-+1 PCP(2_15)
-+1 PCP(3_15)
 -1 PCPdc(1_15)
--1 PCPdc(2_15)
--1 PCPdc(3_15)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(15_2_1)_:
-+1 PCP(1_15)
 +1 PCP(2_15)
-+1 PCP(3_15)
--1 PCPdc(1_15)
 -1 PCPdc(2_15)
--1 PCPdc(3_15)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(15_3_1)_:
-+1 PCP(1_15)
-+1 PCP(2_15)
 +1 PCP(3_15)
--1 PCPdc(1_15)
--1 PCPdc(2_15)
 -1 PCPdc(3_15)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(16_1_1)_:
 +1 PCP(1_16)
-+1 PCP(2_16)
-+1 PCP(3_16)
 -1 PCPdc(1_16)
--1 PCPdc(2_16)
--1 PCPdc(3_16)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(16_2_1)_:
-+1 PCP(1_16)
 +1 PCP(2_16)
-+1 PCP(3_16)
--1 PCPdc(1_16)
 -1 PCPdc(2_16)
--1 PCPdc(3_16)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(16_3_1)_:
-+1 PCP(1_16)
-+1 PCP(2_16)
 +1 PCP(3_16)
--1 PCPdc(1_16)
--1 PCPdc(2_16)
 -1 PCPdc(3_16)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(17_1_1)_:
 +1 PCP(1_17)
-+1 PCP(2_17)
-+1 PCP(3_17)
 -1 PCPdc(1_17)
--1 PCPdc(2_17)
--1 PCPdc(3_17)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(17_2_1)_:
-+1 PCP(1_17)
 +1 PCP(2_17)
-+1 PCP(3_17)
--1 PCPdc(1_17)
 -1 PCPdc(2_17)
--1 PCPdc(3_17)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(17_3_1)_:
-+1 PCP(1_17)
-+1 PCP(2_17)
 +1 PCP(3_17)
--1 PCPdc(1_17)
--1 PCPdc(2_17)
 -1 PCPdc(3_17)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(18_1_1)_:
 +1 PCP(1_18)
-+1 PCP(2_18)
-+1 PCP(3_18)
 -1 PCPdc(1_18)
--1 PCPdc(2_18)
--1 PCPdc(3_18)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(18_2_1)_:
-+1 PCP(1_18)
 +1 PCP(2_18)
-+1 PCP(3_18)
--1 PCPdc(1_18)
 -1 PCPdc(2_18)
--1 PCPdc(3_18)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(18_3_1)_:
-+1 PCP(1_18)
-+1 PCP(2_18)
 +1 PCP(3_18)
--1 PCPdc(1_18)
--1 PCPdc(2_18)
 -1 PCPdc(3_18)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(19_1_1)_:
 +1 PCP(1_19)
-+1 PCP(2_19)
-+1 PCP(3_19)
 -1 PCPdc(1_19)
--1 PCPdc(2_19)
--1 PCPdc(3_19)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(19_2_1)_:
-+1 PCP(1_19)
 +1 PCP(2_19)
-+1 PCP(3_19)
--1 PCPdc(1_19)
 -1 PCPdc(2_19)
--1 PCPdc(3_19)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(19_3_1)_:
-+1 PCP(1_19)
-+1 PCP(2_19)
 +1 PCP(3_19)
--1 PCPdc(1_19)
--1 PCPdc(2_19)
 -1 PCPdc(3_19)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(20_1_1)_:
 +1 PCP(1_20)
-+1 PCP(2_20)
-+1 PCP(3_20)
 -1 PCPdc(1_20)
--1 PCPdc(2_20)
--1 PCPdc(3_20)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(20_2_1)_:
-+1 PCP(1_20)
 +1 PCP(2_20)
-+1 PCP(3_20)
--1 PCPdc(1_20)
 -1 PCPdc(2_20)
--1 PCPdc(3_20)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(20_3_1)_:
-+1 PCP(1_20)
-+1 PCP(2_20)
 +1 PCP(3_20)
--1 PCPdc(1_20)
--1 PCPdc(2_20)
 -1 PCPdc(3_20)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(21_1_1)_:
 +1 PCP(1_21)
-+1 PCP(2_21)
-+1 PCP(3_21)
 -1 PCPdc(1_21)
--1 PCPdc(2_21)
--1 PCPdc(3_21)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(21_2_1)_:
-+1 PCP(1_21)
 +1 PCP(2_21)
-+1 PCP(3_21)
--1 PCPdc(1_21)
 -1 PCPdc(2_21)
--1 PCPdc(3_21)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(21_3_1)_:
-+1 PCP(1_21)
-+1 PCP(2_21)
 +1 PCP(3_21)
--1 PCPdc(1_21)
--1 PCPdc(2_21)
 -1 PCPdc(3_21)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(22_1_1)_:
 +1 PCP(1_22)
-+1 PCP(2_22)
-+1 PCP(3_22)
 -1 PCPdc(1_22)
--1 PCPdc(2_22)
--1 PCPdc(3_22)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(22_2_1)_:
-+1 PCP(1_22)
 +1 PCP(2_22)
-+1 PCP(3_22)
--1 PCPdc(1_22)
 -1 PCPdc(2_22)
--1 PCPdc(3_22)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(22_3_1)_:
-+1 PCP(1_22)
-+1 PCP(2_22)
 +1 PCP(3_22)
--1 PCPdc(1_22)
--1 PCPdc(2_22)
 -1 PCPdc(3_22)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(23_1_1)_:
 +1 PCP(1_23)
-+1 PCP(2_23)
-+1 PCP(3_23)
 -1 PCPdc(1_23)
--1 PCPdc(2_23)
--1 PCPdc(3_23)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(23_2_1)_:
-+1 PCP(1_23)
 +1 PCP(2_23)
-+1 PCP(3_23)
--1 PCPdc(1_23)
 -1 PCPdc(2_23)
--1 PCPdc(3_23)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(23_3_1)_:
-+1 PCP(1_23)
-+1 PCP(2_23)
 +1 PCP(3_23)
--1 PCPdc(1_23)
--1 PCPdc(2_23)
 -1 PCPdc(3_23)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(24_1_1)_:
 +1 PCP(1_24)
-+1 PCP(2_24)
-+1 PCP(3_24)
 -1 PCPdc(1_24)
--1 PCPdc(2_24)
--1 PCPdc(3_24)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(24_2_1)_:
-+1 PCP(1_24)
 +1 PCP(2_24)
-+1 PCP(3_24)
--1 PCPdc(1_24)
 -1 PCPdc(2_24)
--1 PCPdc(3_24)
 <= 7.333333333333333
 
 c_u_cs_power_charging_limit(24_3_1)_:
-+1 PCP(1_24)
-+1 PCP(2_24)
 +1 PCP(3_24)
--1 PCPdc(1_24)
--1 PCPdc(2_24)
 -1 PCPdc(3_24)
 <= 7.333333333333333
 
-c_l_cs_power_discharging_limit(1_1)_:
+c_l_cs_power_discharging_limit(1_1_1)_:
++1 PCP(1_1)
+-1 PCPdc(1_1)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(1_2_1)_:
++1 PCP(2_1)
+-1 PCPdc(2_1)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(1_3_1)_:
 +1 PCP(3_1)
 -1 PCPdc(3_1)
 >= -7.333333333333333
 
-c_l_cs_power_discharging_limit(2_1)_:
+c_l_cs_power_discharging_limit(2_1_1)_:
++1 PCP(1_2)
+-1 PCPdc(1_2)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(2_2_1)_:
++1 PCP(2_2)
+-1 PCPdc(2_2)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(2_3_1)_:
 +1 PCP(3_2)
 -1 PCPdc(3_2)
 >= -7.333333333333333
 
-c_l_cs_power_discharging_limit(3_1)_:
+c_l_cs_power_discharging_limit(3_1_1)_:
++1 PCP(1_3)
+-1 PCPdc(1_3)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(3_2_1)_:
++1 PCP(2_3)
+-1 PCPdc(2_3)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(3_3_1)_:
 +1 PCP(3_3)
 -1 PCPdc(3_3)
 >= -7.333333333333333
 
-c_l_cs_power_discharging_limit(4_1)_:
+c_l_cs_power_discharging_limit(4_1_1)_:
++1 PCP(1_4)
+-1 PCPdc(1_4)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(4_2_1)_:
++1 PCP(2_4)
+-1 PCPdc(2_4)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(4_3_1)_:
 +1 PCP(3_4)
 -1 PCPdc(3_4)
 >= -7.333333333333333
 
-c_l_cs_power_discharging_limit(5_1)_:
+c_l_cs_power_discharging_limit(5_1_1)_:
++1 PCP(1_5)
+-1 PCPdc(1_5)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(5_2_1)_:
++1 PCP(2_5)
+-1 PCPdc(2_5)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(5_3_1)_:
 +1 PCP(3_5)
 -1 PCPdc(3_5)
 >= -7.333333333333333
 
-c_l_cs_power_discharging_limit(6_1)_:
+c_l_cs_power_discharging_limit(6_1_1)_:
++1 PCP(1_6)
+-1 PCPdc(1_6)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(6_2_1)_:
++1 PCP(2_6)
+-1 PCPdc(2_6)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(6_3_1)_:
 +1 PCP(3_6)
 -1 PCPdc(3_6)
 >= -7.333333333333333
 
-c_l_cs_power_discharging_limit(7_1)_:
+c_l_cs_power_discharging_limit(7_1_1)_:
++1 PCP(1_7)
+-1 PCPdc(1_7)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(7_2_1)_:
++1 PCP(2_7)
+-1 PCPdc(2_7)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(7_3_1)_:
 +1 PCP(3_7)
 -1 PCPdc(3_7)
 >= -7.333333333333333
 
-c_l_cs_power_discharging_limit(8_1)_:
+c_l_cs_power_discharging_limit(8_1_1)_:
++1 PCP(1_8)
+-1 PCPdc(1_8)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(8_2_1)_:
++1 PCP(2_8)
+-1 PCPdc(2_8)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(8_3_1)_:
 +1 PCP(3_8)
 -1 PCPdc(3_8)
 >= -7.333333333333333
 
-c_l_cs_power_discharging_limit(9_1)_:
+c_l_cs_power_discharging_limit(9_1_1)_:
++1 PCP(1_9)
+-1 PCPdc(1_9)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(9_2_1)_:
++1 PCP(2_9)
+-1 PCPdc(2_9)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(9_3_1)_:
 +1 PCP(3_9)
 -1 PCPdc(3_9)
 >= -7.333333333333333
 
-c_l_cs_power_discharging_limit(10_1)_:
+c_l_cs_power_discharging_limit(10_1_1)_:
++1 PCP(1_10)
+-1 PCPdc(1_10)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(10_2_1)_:
++1 PCP(2_10)
+-1 PCPdc(2_10)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(10_3_1)_:
 +1 PCP(3_10)
 -1 PCPdc(3_10)
 >= -7.333333333333333
 
-c_l_cs_power_discharging_limit(11_1)_:
+c_l_cs_power_discharging_limit(11_1_1)_:
++1 PCP(1_11)
+-1 PCPdc(1_11)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(11_2_1)_:
++1 PCP(2_11)
+-1 PCPdc(2_11)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(11_3_1)_:
 +1 PCP(3_11)
 -1 PCPdc(3_11)
 >= -7.333333333333333
 
-c_l_cs_power_discharging_limit(12_1)_:
+c_l_cs_power_discharging_limit(12_1_1)_:
++1 PCP(1_12)
+-1 PCPdc(1_12)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(12_2_1)_:
++1 PCP(2_12)
+-1 PCPdc(2_12)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(12_3_1)_:
 +1 PCP(3_12)
 -1 PCPdc(3_12)
 >= -7.333333333333333
 
-c_l_cs_power_discharging_limit(13_1)_:
+c_l_cs_power_discharging_limit(13_1_1)_:
++1 PCP(1_13)
+-1 PCPdc(1_13)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(13_2_1)_:
++1 PCP(2_13)
+-1 PCPdc(2_13)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(13_3_1)_:
 +1 PCP(3_13)
 -1 PCPdc(3_13)
 >= -7.333333333333333
 
-c_l_cs_power_discharging_limit(14_1)_:
+c_l_cs_power_discharging_limit(14_1_1)_:
++1 PCP(1_14)
+-1 PCPdc(1_14)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(14_2_1)_:
++1 PCP(2_14)
+-1 PCPdc(2_14)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(14_3_1)_:
 +1 PCP(3_14)
 -1 PCPdc(3_14)
 >= -7.333333333333333
 
-c_l_cs_power_discharging_limit(15_1)_:
+c_l_cs_power_discharging_limit(15_1_1)_:
++1 PCP(1_15)
+-1 PCPdc(1_15)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(15_2_1)_:
++1 PCP(2_15)
+-1 PCPdc(2_15)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(15_3_1)_:
 +1 PCP(3_15)
 -1 PCPdc(3_15)
 >= -7.333333333333333
 
-c_l_cs_power_discharging_limit(16_1)_:
+c_l_cs_power_discharging_limit(16_1_1)_:
++1 PCP(1_16)
+-1 PCPdc(1_16)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(16_2_1)_:
++1 PCP(2_16)
+-1 PCPdc(2_16)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(16_3_1)_:
 +1 PCP(3_16)
 -1 PCPdc(3_16)
 >= -7.333333333333333
 
-c_l_cs_power_discharging_limit(17_1)_:
+c_l_cs_power_discharging_limit(17_1_1)_:
++1 PCP(1_17)
+-1 PCPdc(1_17)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(17_2_1)_:
++1 PCP(2_17)
+-1 PCPdc(2_17)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(17_3_1)_:
 +1 PCP(3_17)
 -1 PCPdc(3_17)
 >= -7.333333333333333
 
-c_l_cs_power_discharging_limit(18_1)_:
+c_l_cs_power_discharging_limit(18_1_1)_:
++1 PCP(1_18)
+-1 PCPdc(1_18)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(18_2_1)_:
++1 PCP(2_18)
+-1 PCPdc(2_18)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(18_3_1)_:
 +1 PCP(3_18)
 -1 PCPdc(3_18)
 >= -7.333333333333333
 
-c_l_cs_power_discharging_limit(19_1)_:
+c_l_cs_power_discharging_limit(19_1_1)_:
++1 PCP(1_19)
+-1 PCPdc(1_19)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(19_2_1)_:
++1 PCP(2_19)
+-1 PCPdc(2_19)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(19_3_1)_:
 +1 PCP(3_19)
 -1 PCPdc(3_19)
 >= -7.333333333333333
 
-c_l_cs_power_discharging_limit(20_1)_:
+c_l_cs_power_discharging_limit(20_1_1)_:
++1 PCP(1_20)
+-1 PCPdc(1_20)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(20_2_1)_:
++1 PCP(2_20)
+-1 PCPdc(2_20)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(20_3_1)_:
 +1 PCP(3_20)
 -1 PCPdc(3_20)
 >= -7.333333333333333
 
-c_l_cs_power_discharging_limit(21_1)_:
+c_l_cs_power_discharging_limit(21_1_1)_:
++1 PCP(1_21)
+-1 PCPdc(1_21)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(21_2_1)_:
++1 PCP(2_21)
+-1 PCPdc(2_21)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(21_3_1)_:
 +1 PCP(3_21)
 -1 PCPdc(3_21)
 >= -7.333333333333333
 
-c_l_cs_power_discharging_limit(22_1)_:
+c_l_cs_power_discharging_limit(22_1_1)_:
++1 PCP(1_22)
+-1 PCPdc(1_22)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(22_2_1)_:
++1 PCP(2_22)
+-1 PCPdc(2_22)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(22_3_1)_:
 +1 PCP(3_22)
 -1 PCPdc(3_22)
 >= -7.333333333333333
 
-c_l_cs_power_discharging_limit(23_1)_:
+c_l_cs_power_discharging_limit(23_1_1)_:
++1 PCP(1_23)
+-1 PCPdc(1_23)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(23_2_1)_:
++1 PCP(2_23)
+-1 PCPdc(2_23)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(23_3_1)_:
 +1 PCP(3_23)
 -1 PCPdc(3_23)
 >= -7.333333333333333
 
-c_l_cs_power_discharging_limit(24_1)_:
+c_l_cs_power_discharging_limit(24_1_1)_:
++1 PCP(1_24)
+-1 PCPdc(1_24)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(24_2_1)_:
++1 PCP(2_24)
+-1 PCPdc(2_24)
+>= -7.333333333333333
+
+c_l_cs_power_discharging_limit(24_3_1)_:
 +1 PCP(3_24)
 -1 PCPdc(3_24)
 >= -7.333333333333333
@@ -9048,150 +7392,6 @@ bounds
     -inf <= EEV(3_22) <= +inf
     -inf <= EEV(3_23) <= +inf
     -inf <= EEV(3_24) <= +inf
-   0 <= Etriprelax(1_1) <= +inf
-   0 <= Etriprelax(1_2) <= +inf
-   0 <= Etriprelax(1_3) <= +inf
-   0 <= Etriprelax(1_4) <= +inf
-   0 <= Etriprelax(1_5) <= +inf
-   0 <= Etriprelax(1_6) <= +inf
-   0 <= Etriprelax(1_7) <= +inf
-   0 <= Etriprelax(1_8) <= +inf
-   0 <= Etriprelax(1_9) <= +inf
-   0 <= Etriprelax(1_10) <= +inf
-   0 <= Etriprelax(1_11) <= +inf
-   0 <= Etriprelax(1_12) <= +inf
-   0 <= Etriprelax(1_13) <= +inf
-   0 <= Etriprelax(1_14) <= +inf
-   0 <= Etriprelax(1_15) <= +inf
-   0 <= Etriprelax(1_16) <= +inf
-   0 <= Etriprelax(1_17) <= +inf
-   0 <= Etriprelax(1_18) <= +inf
-   0 <= Etriprelax(1_19) <= +inf
-   0 <= Etriprelax(1_20) <= +inf
-   0 <= Etriprelax(1_21) <= +inf
-   0 <= Etriprelax(1_22) <= +inf
-   0 <= Etriprelax(1_23) <= +inf
-   0 <= Etriprelax(1_24) <= +inf
-   0 <= Etriprelax(2_1) <= +inf
-   0 <= Etriprelax(2_2) <= +inf
-   0 <= Etriprelax(2_3) <= +inf
-   0 <= Etriprelax(2_4) <= +inf
-   0 <= Etriprelax(2_5) <= +inf
-   0 <= Etriprelax(2_6) <= +inf
-   0 <= Etriprelax(2_7) <= +inf
-   0 <= Etriprelax(2_8) <= +inf
-   0 <= Etriprelax(2_9) <= +inf
-   0 <= Etriprelax(2_10) <= +inf
-   0 <= Etriprelax(2_11) <= +inf
-   0 <= Etriprelax(2_12) <= +inf
-   0 <= Etriprelax(2_13) <= +inf
-   0 <= Etriprelax(2_14) <= +inf
-   0 <= Etriprelax(2_15) <= +inf
-   0 <= Etriprelax(2_16) <= +inf
-   0 <= Etriprelax(2_17) <= +inf
-   0 <= Etriprelax(2_18) <= +inf
-   0 <= Etriprelax(2_19) <= +inf
-   0 <= Etriprelax(2_20) <= +inf
-   0 <= Etriprelax(2_21) <= +inf
-   0 <= Etriprelax(2_22) <= +inf
-   0 <= Etriprelax(2_23) <= +inf
-   0 <= Etriprelax(2_24) <= +inf
-   0 <= Etriprelax(3_1) <= +inf
-   0 <= Etriprelax(3_2) <= +inf
-   0 <= Etriprelax(3_3) <= +inf
-   0 <= Etriprelax(3_4) <= +inf
-   0 <= Etriprelax(3_5) <= +inf
-   0 <= Etriprelax(3_6) <= +inf
-   0 <= Etriprelax(3_7) <= +inf
-   0 <= Etriprelax(3_8) <= +inf
-   0 <= Etriprelax(3_9) <= +inf
-   0 <= Etriprelax(3_10) <= +inf
-   0 <= Etriprelax(3_11) <= +inf
-   0 <= Etriprelax(3_12) <= +inf
-   0 <= Etriprelax(3_13) <= +inf
-   0 <= Etriprelax(3_14) <= +inf
-   0 <= Etriprelax(3_15) <= +inf
-   0 <= Etriprelax(3_16) <= +inf
-   0 <= Etriprelax(3_17) <= +inf
-   0 <= Etriprelax(3_18) <= +inf
-   0 <= Etriprelax(3_19) <= +inf
-   0 <= Etriprelax(3_20) <= +inf
-   0 <= Etriprelax(3_21) <= +inf
-   0 <= Etriprelax(3_22) <= +inf
-   0 <= Etriprelax(3_23) <= +inf
-   0 <= Etriprelax(3_24) <= +inf
-   0 <= Eminsocrelax(1_1) <= +inf
-   0 <= Eminsocrelax(1_2) <= +inf
-   0 <= Eminsocrelax(1_3) <= +inf
-   0 <= Eminsocrelax(1_4) <= +inf
-   0 <= Eminsocrelax(1_5) <= +inf
-   0 <= Eminsocrelax(1_6) <= +inf
-   0 <= Eminsocrelax(1_7) <= +inf
-   0 <= Eminsocrelax(1_8) <= +inf
-   0 <= Eminsocrelax(1_9) <= +inf
-   0 <= Eminsocrelax(1_10) <= +inf
-   0 <= Eminsocrelax(1_11) <= +inf
-   0 <= Eminsocrelax(1_12) <= +inf
-   0 <= Eminsocrelax(1_13) <= +inf
-   0 <= Eminsocrelax(1_14) <= +inf
-   0 <= Eminsocrelax(1_15) <= +inf
-   0 <= Eminsocrelax(1_16) <= +inf
-   0 <= Eminsocrelax(1_17) <= +inf
-   0 <= Eminsocrelax(1_18) <= +inf
-   0 <= Eminsocrelax(1_19) <= +inf
-   0 <= Eminsocrelax(1_20) <= +inf
-   0 <= Eminsocrelax(1_21) <= +inf
-   0 <= Eminsocrelax(1_22) <= +inf
-   0 <= Eminsocrelax(1_23) <= +inf
-   0 <= Eminsocrelax(1_24) <= +inf
-   0 <= Eminsocrelax(2_1) <= +inf
-   0 <= Eminsocrelax(2_2) <= +inf
-   0 <= Eminsocrelax(2_3) <= +inf
-   0 <= Eminsocrelax(2_4) <= +inf
-   0 <= Eminsocrelax(2_5) <= +inf
-   0 <= Eminsocrelax(2_6) <= +inf
-   0 <= Eminsocrelax(2_7) <= +inf
-   0 <= Eminsocrelax(2_8) <= +inf
-   0 <= Eminsocrelax(2_9) <= +inf
-   0 <= Eminsocrelax(2_10) <= +inf
-   0 <= Eminsocrelax(2_11) <= +inf
-   0 <= Eminsocrelax(2_12) <= +inf
-   0 <= Eminsocrelax(2_13) <= +inf
-   0 <= Eminsocrelax(2_14) <= +inf
-   0 <= Eminsocrelax(2_15) <= +inf
-   0 <= Eminsocrelax(2_16) <= +inf
-   0 <= Eminsocrelax(2_17) <= +inf
-   0 <= Eminsocrelax(2_18) <= +inf
-   0 <= Eminsocrelax(2_19) <= +inf
-   0 <= Eminsocrelax(2_20) <= +inf
-   0 <= Eminsocrelax(2_21) <= +inf
-   0 <= Eminsocrelax(2_22) <= +inf
-   0 <= Eminsocrelax(2_23) <= +inf
-   0 <= Eminsocrelax(2_24) <= +inf
-   0 <= Eminsocrelax(3_1) <= +inf
-   0 <= Eminsocrelax(3_2) <= +inf
-   0 <= Eminsocrelax(3_3) <= +inf
-   0 <= Eminsocrelax(3_4) <= +inf
-   0 <= Eminsocrelax(3_5) <= +inf
-   0 <= Eminsocrelax(3_6) <= +inf
-   0 <= Eminsocrelax(3_7) <= +inf
-   0 <= Eminsocrelax(3_8) <= +inf
-   0 <= Eminsocrelax(3_9) <= +inf
-   0 <= Eminsocrelax(3_10) <= +inf
-   0 <= Eminsocrelax(3_11) <= +inf
-   0 <= Eminsocrelax(3_12) <= +inf
-   0 <= Eminsocrelax(3_13) <= +inf
-   0 <= Eminsocrelax(3_14) <= +inf
-   0 <= Eminsocrelax(3_15) <= +inf
-   0 <= Eminsocrelax(3_16) <= +inf
-   0 <= Eminsocrelax(3_17) <= +inf
-   0 <= Eminsocrelax(3_18) <= +inf
-   0 <= Eminsocrelax(3_19) <= +inf
-   0 <= Eminsocrelax(3_20) <= +inf
-   0 <= Eminsocrelax(3_21) <= +inf
-   0 <= Eminsocrelax(3_22) <= +inf
-   0 <= Eminsocrelax(3_23) <= +inf
-   0 <= Eminsocrelax(3_24) <= +inf
     -inf <= Etripn(1_1) <= +inf
     -inf <= Etripn(1_2) <= +inf
     -inf <= Etripn(1_3) <= +inf

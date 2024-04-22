@@ -31,8 +31,6 @@ data['energy_price'] = pd.read_csv('energy_price.csv')
 data['evs_inputs'] = pd.read_csv('evs_inputs.csv')
 data['alpha'] = pd.read_csv('alpha.csv')
 data['css_inputs'] = pd.read_csv('css_inputs.csv')
-#data['pchmaxcs'] = pd.read_csv('pchmaxcs.csv')
-data['S'] = pd.read_csv('s.csv')
 data['S'] = pd.read_csv('s.csv')
 data['cp_inputs'] = pd.read_csv('cp_inputs.csv')
 data['fases'] = pd.read_csv('fases.csv')
@@ -40,7 +38,6 @@ data['pl'] = pd.read_csv('pl.csv')
 data['pt'] = pd.read_csv('pt.csv')
 data['pv'] = pd.read_csv('pv.csv')
 data['css_power'] = pd.read_csv('css_power.csv')
-data['cps_power'] = pd.read_csv('cps_power.csv')
 
 n_time = data['energy_price']['dT'].size
 n_evs = data['evs_inputs']['Esoc'].size
@@ -48,7 +45,7 @@ cp = data['cp_inputs']['cs_id'].size
 css = data['css_inputs']['cs_id'].size
 fases = data['fases']['line'].size
 
-print(n_evs, cp, css)
+print(n_evs, cp, css, fases)
 print(cp)
 
 
@@ -71,15 +68,11 @@ model.f = pyo.Set(initialize = np.arange(1, fases + 1))
 model.pt = pyo.Param(model.f, model.t, initialize =_auxDictionary(data['pt'].to_numpy()))
 model.pv = pyo.Param(model.f, model.t, initialize =_auxDictionary(data['pv'].to_numpy()))
 
-
-
 model.ev_id = pyo.Param(model.ev, initialize =_auxDictionary(data['evs_inputs'].to_numpy()[:,10]))
 model.cs_id = pyo.Param(model.cs, initialize =_auxDictionary(data['css_inputs'].to_numpy()[:,0]))
 model.my_cs_id_cp = pyo.Param(model.cp, initialize =_auxDictionary(data['cp_inputs'].to_numpy()[:,0]))
 model.cp_id = pyo.Param(model.cp, initialize =_auxDictionary(data['cp_inputs'].to_numpy()[:,10]))
 model.csconnected = pyo.Param(model.cp, initialize =_auxDictionary(data['cp_inputs'].to_numpy()[:,11]))
-
-
 
 model.ESoc = pyo.Param(model.ev, initialize =_auxDictionary(data['evs_inputs'].to_numpy()[:,0]))
 model.EEVmin = pyo.Param(model.ev, initialize =_auxDictionary(data['evs_inputs'].to_numpy()[:,1]))
@@ -93,15 +86,15 @@ model.evdcheff = pyo.Param(model.ev, initialize =_auxDictionary(data['evs_inputs
 model.cheff = pyo.Param(model.cp, initialize =_auxDictionary(data['cp_inputs'].to_numpy()[:,1])) 
 model.dcheff = pyo.Param(model.cp, initialize =_auxDictionary(data['cp_inputs'].to_numpy()[:,2])) 
 model.cpconnected = pyo.Param(model.ev, initialize =_auxDictionary(data['evs_inputs'].to_numpy()[:,8])) 
-#model.Pcpmax = pyo.Param(model.cp, initialize =_auxDictionary(data['cp_inputs'].to_numpy()[:,3])) 
-model.Pcpmax = pyo.Param(model.f, model.cp, initialize = _auxDictionary(data['cps_power'].to_numpy()))
+model.Pcpmax = pyo.Param(model.cp, initialize =_auxDictionary(data['cp_inputs'].to_numpy()[:,3])) 
+#model.Pcpmax = pyo.Param(model.f, model.cp, initialize = _auxDictionary(data['cps_power'].to_numpy()))
 #model.Pcpdis = pyo.Param(model.cp, initialize =_auxDictionary(data['CSs_inputs'].to_numpy()[:,5])) 
 model.type_ = pyo.Param(model.ev, initialize =_auxDictionary(data['cp_inputs'].to_numpy()[:,9])) 
 model.v2gcp = pyo.Param(model.cp, initialize =_auxDictionary(data['cp_inputs'].to_numpy()[:,4])) 
 model.v2gev = pyo.Param(model.ev, initialize =_auxDictionary(data['evs_inputs'].to_numpy()[:,9])) 
 #model.Pcsmax = pyo.Param(model.cs, initialize =_auxDictionary(data['css_inputs'].to_numpy()[:,1])) 
 model.Pcsmax = pyo.Param(model.f, model.cs, initialize = _auxDictionary(data['css_power'].to_numpy()))
-model.cpconnected = pyo.Param(model.ev, initialize =_auxDictionary(data['evs_inputs'].to_numpy()[:,8])) 
+#model.cpconnected = pyo.Param(model.ev, initialize =_auxDictionary(data['evs_inputs'].to_numpy()[:,8])) 
 
 
 #cs_data = data['CSs_inputs'].to_numpy()
@@ -200,15 +193,25 @@ model.energy_limits_EVS_2 = pyo.Constraint(model.ev, model.t, rule = _energy_lim
 
 #****************************************************CP and CS constraints******************************************************
 
-def _cp_power_charging_limit(m,f,ev,t,cp): 
+def _cp_power_charging_limit(m,ev,t,cp): 
     if m.type_[cp] == 1 and m.place[cp] == m.ev_id[ev]:  
         #print(f"Entrou no IF no type 1 com ev = {ev}, t = {t}, cp = {cp}, m.type_[ev] = {m.type_[cp]} m.Pcpmax[cp] = {m.Pcpmax[cp]} m.place[cp] = {m.place[cp]}")
-        return m.PEV[ev,t] <= m.Pcpmax[f,cp]*m.alpha[ev,t]*m.a[ev,t]
+        return m.PEV[ev,t] <= m.Pcpmax[cp]*m.alpha[ev,t]*m.a[ev,t]
     elif m.type_[cp] == 2 and m.place[cp] == m.ev_id[ev]:   
         #print(f"Entrou no ELSE no type 2 com ev = {ev}, t = {t}, cp = {cp},  m.type_[ev] = {m.type_[cp]} m.Pcpmax[cp] = {m.Pcpmax[cp]} m.place[cp] = {m.place[cp]}")
-        return m.PEV[ev,t] == m.Pcpmax[f,cp]*m.alpha[ev,t]*m.a[ev,t]
+        return m.PEV[ev,t] == m.Pcpmax[cp]*m.alpha[ev,t]*m.a[ev,t]
     return pyo.Constraint.Skip
-model.cp_power_charge_limit = pyo.Constraint(model.f, model.ev, model.t, model.cp, rule = _cp_power_charging_limit)
+model.cp_power_charge_limit = pyo.Constraint(model.ev, model.t, model.cp, rule = _cp_power_charging_limit)
+
+
+
+
+
+
+
+
+
+
 
 
 def _cp_power_consumption(m,ev,t,cp): 
@@ -220,21 +223,11 @@ def _cp_power_consumption(m,ev,t,cp):
 #model._cp_power_consumption = pyo.Constraint(model.ev, model.t, model.cp, rule = _cp_power_consumption)
 
 
-#################3teste
-#ef _cp_power_consumption(m,f,ev,t,cp): 
-#   if m.type_[cp] == 1 and m.place[cp] == m.ev_id[ev]:  
-#      return m.PCPf[f,cp,t] == m.PEV[ev,t]
-#   elif m.type_[cp] == 2 and m.place[cp] == m.ev_id[ev]:   
-#       return m.PCPf[f,cp,t]== m.PEV[ev,t]
-#   return pyo.Constraint.Skip
-#odel._cp_power_consumption = pyo.Constraint(model.f, model.ev, model.t, model.cp, rule = _cp_power_consumption)
-
-
-def _cp_power_discharging_limit(m,f,ev,t,cp): 
+def _cp_power_discharging_limit(m,ev,t,cp): 
     print({m.type_})
     if m.type_[cp] == 1 and m.place[cp] == m.ev_id[ev]: 
         #print(f"Entrou no IF no type {m.type} com ev = {ev}, t = {t}, cp = {cp}")
-        return m.PEVdc[ev,t] <= m.Pcpmax[f,cp]*m.alpha[ev,t]*m.b[ev,t]
+        return m.PEVdc[ev,t] <= m.Pcpmax[cp]*m.alpha[ev,t]*m.b[ev,t]
     elif m.type_[cp] == 2 and m.place[cp] == m.ev_id[ev]: 
         #print(f"Entrou no ELSE no type {m.type} com ev = {ev}, t = {t}, cp = {cp}")
         return m.PEVdc[ev,t] == 0
@@ -242,7 +235,7 @@ def _cp_power_discharging_limit(m,f,ev,t,cp):
         #print(f"bnana {m.type} com ev = {ev}, t = {t}, cp = {cp}")
         #return 0 
     return pyo.Constraint.Skip      
-#model.cp_power_discharge_limit = pyo.Constraint(model.f, model.ev, model.t, model.cp, rule = _cp_power_discharging_limit)
+model.cp_power_discharge_limit = pyo.Constraint(model.ev, model.t, model.cp, rule = _cp_power_discharging_limit)
 
 
 def _cp_power_discharging(m,ev,t,cp): 
@@ -251,7 +244,7 @@ def _cp_power_discharging(m,ev,t,cp):
     elif m.type_[cp] == 2 and m.place[cp] == m.ev_id[ev]:   
         return m.PCPdc[cp,t] == m.PEVdc[ev,t] 
     return pyo.Constraint.Skip
-model._cp_power_discharging = pyo.Constraint(model.ev, model.t, model.cp, rule = _cp_power_discharging)
+#model._cp_power_discharging = pyo.Constraint(model.ev, model.t, model.cp, rule = _cp_power_discharging)
 
 
 def _cs_power_charging_limit(m,f,t,cp, cs): 
@@ -264,9 +257,9 @@ def _cs_power_charging_limit(m,f,t,cp, cs):
                 print(f"soma = {soma}, ev = {ev}, m.PEV[ev,t] - m.PEVdc[ev,t] = {m.PEV[ev,t]} - {m.PEVdc[ev,t]}")
         print(f"soma {soma} cs {cs} cp {cp}")
         #return sum([m.PEV[ev,t] - m.PEVdc[ev,t] for ev in m.ev if m.cpconnected[ev] == m.my_cs_id_cp[cp]]) <= m.Pcsmax[cs] #cpconnected não pode vir dos evs_inputs
-        return sum([m.PCP[cp,t] - m.PCPdc[cp,t] for cp in m.cp if m.cs_id[cs] == m.my_cs_id_cp[cp]]) <= m.Pcsmax[cs,f] 
+        return sum([m.PCP[cp,t] - m.PCPdc[cp,t] for cp in m.cp if m.cs_id[cs] == m.my_cs_id_cp[cp]]) <= m.Pcsmax[f,cs] 
     return pyo.Constraint.Skip    
-model.cs_power_charging_limit = pyo.Constraint(model.f, model.t, model.cp, model.cs, rule = _cs_power_charging_limit)  
+#model.cs_power_charging_limit = pyo.Constraint(model.f, model.t, model.cp, model.cs, rule = _cs_power_charging_limit)  
 
 
 def _cs_power_discharging_limit(m,f,t,cs): 
