@@ -324,7 +324,7 @@ model.FOag = pyo.Objective(rule = _FOag, sense = pyo.minimize)
 from pyomo.opt import SolverFactory
 model.write('res_V4_EC.lp',  io_options={'symbolic_solver_labels': True})
 
-opt = pyo.SolverFactory('cplex', executable='C:/Program Files/IBM/ILOG/CPLEX_Studio129/cplex/bin/x64_win64/cplex.exe')
+opt = pyo.SolverFactory('cplex', executable='/mnt/c/Program Files/IBM/ILOG/CPLEX_Studio129/cplex/bin/x64_win64/cplex.exe')
 opt.options['LogFile'] = 'res_V4_EC.log'
 
 results = opt.solve(model)#, tee=True)
@@ -357,18 +357,65 @@ PCP_df = ext_pyomo_vals(model.PCP)
 PCS_df = ext_pyomo_vals(model.PCS)
 dT_df = ext_pyomo_vals(model.dT)
 import_price_df = ext_pyomo_vals(model.import_price)
+export_price_df = ext_pyomo_vals(model.export_price)
+
+
 PEVdc_df = ext_pyomo_vals(model.PEVdc)
 EEV_df = ext_pyomo_vals(model.EEV)
+
 grid_import_df = ext_pyomo_vals(model.grid_import) 
+
+# Separating the three phases:
+grid_import_df_3colums = pd.DataFrame(np.reshape(grid_import_df.values, (24, 3)))
+grid_import_df_3colums.columns = ['grid_import_ph1', 'grid_import_ph2', 'grid_import_ph3']
+
 grid_export_df = ext_pyomo_vals(model.grid_export)
+
+# Separating the three phases:
+grid_export_df_3colums = pd.DataFrame(np.reshape(grid_export_df.values, (24, 3)))
+grid_export_df_3colums.columns = ['grid_export_ph1', 'grid_export_ph2', 'grid_export_ph3']
+
+
+grid_accounts = pd.concat([import_price_df, export_price_df, grid_import_df_3colums, grid_export_df_3colums], axis=1)
+
+grid_accounts.columns.values[0] = 'import_price'
+grid_accounts.columns.values[1] = 'export_price'
+
+grid_accounts['grid_import_ph1*import_price'] = grid_accounts['grid_import_ph1'] * grid_accounts['import_price']
+grid_accounts['grid_import_ph2*import_price'] = grid_accounts['grid_import_ph2'] * grid_accounts['import_price']
+grid_accounts['grid_import_ph3*import_price'] = grid_accounts['grid_import_ph3'] * grid_accounts['import_price']
+
+grid_accounts['grid_export_ph1*export_price'] = grid_accounts['grid_export_ph1'] * grid_accounts['export_price']
+grid_accounts['grid_export_ph2*export_price'] = grid_accounts['grid_export_ph2'] * grid_accounts['export_price']
+grid_accounts['grid_export_ph3*export_price'] = grid_accounts['grid_export_ph3'] * grid_accounts['export_price']
+
+# Saving on CSV
+grid_accounts.to_csv("grid_accounts.csv")
+
 EEVmax_df = ext_pyomo_vals(model.EEVmax)
 Etriprelax_df = ext_pyomo_vals(model.Etriprelax)
 Eminsocrelax_df = ext_pyomo_vals(model.Eminsocrelax)
 Etripn_df = ext_pyomo_vals(model.Etripn)
 
+ev_accounts = pd.DataFrame(columns=[i for i in range(1, 25)])
+EEVmax_values = EEVmax_df.values.tolist()
+EEVmax_values = [value for sublist in EEVmax_values for value in sublist]
+print(EEVmax_values)
+
+print(len(EEV_df.columns), len(EEVmax_values))
+for i in range(len(EEVmax_values)):
+    line = []
+    for j in range(len(EEV_df.columns)):
+        result = EEVmax_values[i] * EEV_df.iloc[i, j]
+        line.append(result)
+        print(result)
+    ev_accounts.loc[i] = line
+    print(line)
+
+ev_accounts.to_csv('ev_accounts.csv')
 #return sum(m.grid_import[f,t] *(m.import_price[t]) - m.grid_export[f,t]*(m.export_price[t]) + (m.EEVmax[ev] - m.EEV[ev,t])*0.1  + m.Eminsocrelax[ev,t]*m.penalty2 for ev in np.arange(1, n_evs + 1) for f in np.arange(1, fases + 1) for t in np.arange(1, n_time + 1)) 
 
-second_term = sum([(EEVmax_df - EEV_df[0][t])*0.1  for t in np.arange(1, n_time + 1)])
+#second_term = sum([(EEVmax_df - EEV_df[0][t])*0.1  for t in np.arange(1, n_time + 1)])
 
 charge_cost = sum([PEV_df[t][ev]*dT_df[0][t]*import_price_df[0][t]
                    for ev in np.arange(1, n_evs + 1) for t in np.arange(1, n_time + 1)])
