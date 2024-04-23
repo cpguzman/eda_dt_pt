@@ -258,7 +258,7 @@ def _cs_power_discharging_limit(m,t,cs,cp): #This is used when the CS power is d
         for other_cp in m.cp:
             if other_cp != cp and m.my_cp_fases[cp] == m.my_cp_fases[other_cp] and m.my_cs_id_cp[cp] == m.my_cs_id_cp[other_cp]:
                 total = total + m.PCP[other_cp,t] - m.PCPdc[other_cp,t] 
-                print(f"\nThe sum is being done with the evs connected on phase {m.my_cp_fases[cp]}, which are: {total}\n")
+        print(f"\nThe sum is being done with the evs connected on phase {m.my_cp_fases[cp]}, which are: {total}\n")
         return total >= -1 * m.Pcsmax[cs]/3 #if it is isolated, the sum will always be just it. If not, it will be the sum of it and the others
     return pyo.Constraint.Skip
 #model.cs_power_discharging_limit = pyo.Constraint(model.f,model.t, model.cs, model.cp,  rule = _cs_power_discharging_limit) #This is used when the CS power is settled to be equilibrium between the 3 phases 
