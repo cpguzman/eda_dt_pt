@@ -385,9 +385,13 @@ grid_accounts['grid_import_ph1*import_price'] = grid_accounts['grid_import_ph1']
 grid_accounts['grid_import_ph2*import_price'] = grid_accounts['grid_import_ph2'] * grid_accounts['import_price']
 grid_accounts['grid_import_ph3*import_price'] = grid_accounts['grid_import_ph3'] * grid_accounts['import_price']
 
+grid_accounts['total_grid_import*import_price'] = grid_accounts['grid_import_ph1*import_price'] + grid_accounts['grid_import_ph2*import_price'] + grid_accounts['grid_import_ph3*import_price']
+
 grid_accounts['grid_export_ph1*export_price'] = grid_accounts['grid_export_ph1'] * grid_accounts['export_price']
 grid_accounts['grid_export_ph2*export_price'] = grid_accounts['grid_export_ph2'] * grid_accounts['export_price']
 grid_accounts['grid_export_ph3*export_price'] = grid_accounts['grid_export_ph3'] * grid_accounts['export_price']
+
+grid_accounts['total_grid_export*export_price'] = grid_accounts['grid_export_ph1*export_price'] + grid_accounts['grid_export_ph2*export_price'] + grid_accounts['grid_export_ph3*export_price']
 
 # Saving on CSV
 grid_accounts.to_csv("grid_accounts.csv")
@@ -396,6 +400,9 @@ EEVmax_df = ext_pyomo_vals(model.EEVmax)
 Etriprelax_df = ext_pyomo_vals(model.Etriprelax)
 Eminsocrelax_df = ext_pyomo_vals(model.Eminsocrelax)
 Etripn_df = ext_pyomo_vals(model.Etripn)
+
+etrip_penalty = Etripn_df * model.penalty2
+etrip_penalty.to_csv("etrip_times_penalty.csv")
 
 ev_accounts = pd.DataFrame(columns=[i for i in range(1, 25)])
 EEVmax_values = EEVmax_df.values.tolist()
@@ -413,6 +420,8 @@ for i in range(len(EEVmax_values)):
     print(line)
 
 ev_accounts.to_csv('ev_accounts.csv')
+
+
 #return sum(m.grid_import[f,t] *(m.import_price[t]) - m.grid_export[f,t]*(m.export_price[t]) + (m.EEVmax[ev] - m.EEV[ev,t])*0.1  + m.Eminsocrelax[ev,t]*m.penalty2 for ev in np.arange(1, n_evs + 1) for f in np.arange(1, fases + 1) for t in np.arange(1, n_time + 1)) 
 
 #second_term = sum([(EEVmax_df - EEV_df[0][t])*0.1  for t in np.arange(1, n_time + 1)])
