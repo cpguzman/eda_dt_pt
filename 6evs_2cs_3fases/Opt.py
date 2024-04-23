@@ -324,7 +324,7 @@ model.FOag = pyo.Objective(rule = _FOag, sense = pyo.minimize)
 from pyomo.opt import SolverFactory
 model.write('res_V4_EC.lp',  io_options={'symbolic_solver_labels': True})
 
-opt = pyo.SolverFactory('cplex', executable='/mnt/c/Program Files/IBM/ILOG/CPLEX_Studio129/cplex/bin/x64_win64/cplex.exe')
+opt = pyo.SolverFactory('cplex', executable='C:\\Program Files\\IBM\\ILOG\\CPLEX_Studio129\\cplex\\bin\\x64_win64\\cplex.exe')
 opt.options['LogFile'] = 'res_V4_EC.log'
 
 results = opt.solve(model)#, tee=True)
@@ -413,7 +413,7 @@ print(len(EEV_df.columns), len(EEVmax_values))
 for i in range(len(EEVmax_values)):
     line = []
     for j in range(len(EEV_df.columns)):
-        result = EEVmax_values[i] * EEV_df.iloc[i, j]
+        result = (EEVmax_values[i] - EEV_df.iloc[i, j]) * 0.1
         line.append(result)
         print(result)
     ev_accounts.loc[i] = line
