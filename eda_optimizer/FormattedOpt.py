@@ -241,7 +241,7 @@ def _cs_power_charging_limit(m,t,cs,cp): #This is used when the CS power is divi
         for other_cp in m.cp:
             if other_cp != cp and m.my_cp_fases[cp] == m.my_cp_fases[other_cp] and m.my_cs_id_cp[cp] == m.my_cs_id_cp[other_cp]:
                 total = total + m.PCP[other_cp,t] - m.PCPdc[other_cp,t] 
-                print(f"\nThe sum is being done with the evs connected on phase {m.my_cp_fases[cp]}, which are: {total}\n")
+        print(f"\nThe sum is being done with the evs connected on phase {m.my_cp_fases[cp]}, which are: {total}\n")
         return total <= m.Pcsmax[cs]/3 #if it is isolated, the sum will always be just it. If not, it will be the sum of it and the others
     return pyo.Constraint.Skip    
 
@@ -307,7 +307,7 @@ model.FOag = pyo.Objective(rule = _FOag, sense = pyo.minimize)
 from pyomo.opt import SolverFactory
 model.write('res_V4_EC.lp',  io_options={'symbolic_solver_labels': True})
 
-opt = pyo.SolverFactory('cplex', executable='C:\\Program Files\\IBM\\ILOG\\CPLEX_Studio129\\cplex\\bin\\x64_win64\\cplex.exe')
+opt = pyo.SolverFactory('cplex', executable="/mnt/c/Program Files/IBM/ILOG/CPLEX_Studio129/cplex/bin/x64_win64/cplex.exe")
 opt.options['LogFile'] = 'res_V4_EC.log'
 
 results = opt.solve(model)#, tee=True)
