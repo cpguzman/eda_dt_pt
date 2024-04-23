@@ -416,12 +416,9 @@ Etripn_df.sum().to_csv(folder + '/Etripn_h.csv')
 # Creating a CSV with the grid accounts, combining import and export prices along with three-phase import and export data
 grid_accounts = pd.concat([import_price_df, export_price_df, grid_import_df_3colums, grid_export_df_3colums], axis=1)
 
-grid_accounts.to_csv('grid_accounts_cru.csv')
 # Renaming the colums
 grid_accounts.columns.values[0] = 'import_price'
 grid_accounts.columns.values[1] = 'export_price'
-
-grid_accounts.to_csv('grid_accounts_cru2.csv')
 
 # Doing the accounts
 grid_accounts['grid_import_ph1*import_price'] = grid_accounts['grid_import_ph1'] * grid_accounts['import_price']
