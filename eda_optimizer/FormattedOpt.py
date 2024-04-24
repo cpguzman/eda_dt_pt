@@ -4,7 +4,7 @@ import pyomo.environ as pyo
 import numpy as np
 import pandas as pd
 import matplotlib as plt
-
+import math
 
 # Function used to format the data in order to use with pyomo library.
 def _auxDictionary(a):
@@ -93,8 +93,8 @@ model.v2gev = pyo.Param(model.ev, initialize =_auxDictionary(data['evs_inputs'].
 #model.Pcsmax = pyo.Param(model.cs, initialize =_auxDictionary(data['css_inputs'].to_numpy()[:,1])) # In case of being free from becoming unbalanced.
 model.Pcsmax = pyo.Param(model.f, model.cs, initialize = _auxDictionary(data['css_power'].to_numpy())) # To keep it linked and balanced.
 
-cp_inputs_as_int = data['cp_inputs'].to_numpy().astype(int)
-model.place = pyo.Param(model.cp, initialize =_auxDictionary(cp_inputs_as_int[:,6])) 
+#cp_inputs_as_int = data['cp_inputs'].to_numpy().astype(int)
+model.place = pyo.Param(model.cp, initialize =_auxDictionary(data['cp_inputs'].to_numpy()[:,6])) 
 
 model.dT = pyo.Param(model.t, initialize =_auxDictionary(data['energy_price'].to_numpy()[:,0]))
 model.import_price = pyo.Param(model.t, initialize =_auxDictionary(data['energy_price'].to_numpy()[:,1]))
@@ -236,7 +236,7 @@ model._cp_power_discharging = pyo.Constraint(model.ev, model.t, model.cp, rule =
 
 def _cs_power_charging_limit(m,f,t,cs,cp): #This is used when the CS power is settled to be equilibrium between the 3 phases
 #def _cs_power_charging_limit(m,t,cs,cp): #This is used when the CS power is divided by three, and therefore it is possible to be not equilibrium between the 3 phases
-    if m.cs_id[cs] == m.my_cs_id_cp[cp]: 
+    if m.cs_id[cs] == m.my_cs_id_cp[cp] and not math.isnan(m.place[cp]): 
         return (m.PCP[cp,t] - m.PCPdc[cp,t] + sum(m.PCP[other_cp,t] - m.PCPdc[other_cp,t] for other_cp in m.cp if other_cp != cp and m.my_cp_fases[cp] == m.my_cp_fases[other_cp] and m.my_cs_id_cp[cp] == m.my_cs_id_cp[other_cp])) <= m.Pcsmax[f,cs]    
     return pyo.Constraint.Skip    
 
@@ -247,7 +247,7 @@ model.cs_power_charging_limit = pyo.Constraint(model.f, model.t, model.cs, model
 # CS power discharging limitation
 
 def _cs_power_discharging_limit(m,f,t,cs,cp): #This is used when the CS power is settled to be equilibrium between the 3 phases
-    if m.cs_id[cs] == m.my_cs_id_cp[cp]: 
+    if m.cs_id[cs] == m.my_cs_id_cp[cp] and not math.isnan(m.place[cp]): 
         return (m.PCP[cp,t] - m.PCPdc[cp,t] + sum(m.PCP[other_cp,t] - m.PCPdc[other_cp,t] for other_cp in m.cp if other_cp != cp and m.my_cp_fases[cp] == m.my_cp_fases[other_cp] and m.my_cs_id_cp[cp] == m.my_cs_id_cp[other_cp])) >= -1 * m.Pcsmax[f,cs]
     return pyo.Constraint.Skip
 model.cs_power_discharging_limit = pyo.Constraint(model.f,model.t, model.cs, model.cp,  rule = _cs_power_discharging_limit) #This is used when the CS power is settled to be equilibrium between the 3 phases 
@@ -262,7 +262,7 @@ model._cs_power_charge_discharge_limit = pyo.Constraint(model.f, model.t, model.
 #Energy balance in the system considering threephase balanced PV, threephase unbalanced load consumption, and threphase unbalanced CS 
 def _energy_balance(m,f,t): 
     #return m.grid_import[t]  == sum(m.PCS[cs,t] for cs in m.cs)
-    return m.grid_import[f,t]  == sum(m.PCS[f,cs,t]/3 for cs in m.cs) + m.pl[f,t] - m.pv[f,t] + model.grid_export[f,t] 
+    return m.grid_import[f,t]  == sum(m.PCS[f,cs,t] for cs in m.cs) + m.pl[f,t] - m.pv[f,t] + model.grid_export[f,t] 
 model._energy_balance = pyo.Constraint(model.f, model.t, rule =_energy_balance)  
 
 #Contracted power limitation
