@@ -87,11 +87,11 @@ model.Pcpmax = pyo.Param(model.cp, initialize =_auxDictionary(data['cp_inputs'].
 #model.Pcpmax = pyo.Param(model.f, model.cp, initialize = _auxDictionary(data['cps_power'].to_numpy()))
 #model.Pcpdis = pyo.Param(model.cp, initialize =_auxDictionary(data['CSs_inputs'].to_numpy()[:,5])) 
 
-model.type_ = pyo.Param(model.ev, initialize =_auxDictionary(data['cp_inputs'].to_numpy()[:,9])) # If the CP is controlable or not (on-off socket)
+model.type_ = pyo.Param(model.cp, initialize =_auxDictionary(data['cp_inputs'].to_numpy()[:,9])) # If the CP is controlable or not (on-off socket)
 model.v2gcp = pyo.Param(model.cp, initialize =_auxDictionary(data['cp_inputs'].to_numpy()[:,4])) 
 model.v2gev = pyo.Param(model.ev, initialize =_auxDictionary(data['evs_inputs'].to_numpy()[:,9])) 
-model.Pcsmax = pyo.Param(model.cs, initialize =_auxDictionary(data['css_inputs'].to_numpy()[:,1])) # In case of being free from becoming unbalanced.
-#model.Pcsmax = pyo.Param(model.f, model.cs, initialize = _auxDictionary(data['css_power'].to_numpy())) # To keep it linked and balanced.
+#model.Pcsmax = pyo.Param(model.cs, initialize =_auxDictionary(data['css_inputs'].to_numpy()[:,1])) # In case of being free from becoming unbalanced.
+model.Pcsmax = pyo.Param(model.f, model.cs, initialize = _auxDictionary(data['css_power'].to_numpy())) # To keep it linked and balanced.
 
 cp_inputs_as_int = data['cp_inputs'].to_numpy().astype(int)
 model.place = pyo.Param(model.cp, initialize =_auxDictionary(cp_inputs_as_int[:,6])) 
@@ -120,7 +120,8 @@ model.a = pyo.Var(model.ev, model.t, domain = pyo.Binary,bounds=(0, 1), initiali
 model.b = pyo.Var(model.ev, model.t, domain = pyo.Binary,bounds=(0, 1), initialize=0) #EV discharging binary 
 model.PCP = pyo.Var(model.cp, model.t, domain = pyo.Reals, initialize = 0)
 model.PCPdc = pyo.Var(model.cp, model.t, domain = pyo.Reals, initialize = 0)
-model.PCS = pyo.Var(model.cs, model.t, domain = pyo.Reals, initialize = 0)
+#model.PCS = pyo.Var(model.cs, model.t, domain = pyo.Reals, initialize = 0)
+model.PCS = pyo.Var(model.f, model.cs, model.t, domain = pyo.Reals, initialize = 0)
 model.grid_import = pyo.Var(model.f,model.t, domain=pyo.NonNegativeReals, initialize = 0)
 model.grid_export = pyo.Var(model.f,model.t, domain=pyo.NonNegativeReals, initialize = 0)
 model.is_importing = pyo.Var(model.t, domain=pyo.Binary, bounds=(0, 1), initialize=0)
@@ -233,8 +234,8 @@ model._cp_power_discharging = pyo.Constraint(model.ev, model.t, model.cp, rule =
 
 # CS power consumption limitation
 
-#def _cs_power_charging_limit(m,f,t,cs,cp): #This is used when the CS power is settled to be equilibrium between the 3 phases
-def _cs_power_charging_limit(m,t,cs,cp): #This is used when the CS power is divided by three, and therefore it is possible to be not equilibrium between the 3 phases
+def _cs_power_charging_limit(m,f,t,cs,cp): #This is used when the CS power is settled to be equilibrium between the 3 phases
+#def _cs_power_charging_limit(m,t,cs,cp): #This is used when the CS power is divided by three, and therefore it is possible to be not equilibrium between the 3 phases
     if m.cs_id[cs] == m.my_cs_id_cp[cp]: 
         total = m.PCP[cp,t] - m.PCPdc[cp,t]
         print(f"\nCharging Point {cp}, that is on Charging Station {cs} is connected on phase {m.my_cp_fases[cp]}.")
@@ -242,16 +243,16 @@ def _cs_power_charging_limit(m,t,cs,cp): #This is used when the CS power is divi
             if other_cp != cp and m.my_cp_fases[cp] == m.my_cp_fases[other_cp] and m.my_cs_id_cp[cp] == m.my_cs_id_cp[other_cp]:
                 total = total + m.PCP[other_cp,t] - m.PCPdc[other_cp,t] 
         print(f"\nThe sum is being done with the evs connected on phase {m.my_cp_fases[cp]}, which are: {total}\n")
-        return total <= m.Pcsmax[cs]/3 #if it is isolated, the sum will always be just it. If not, it will be the sum of it and the others
+        return total <= m.Pcsmax[f,cs] #if it is isolated, the sum will always be just it. If not, it will be the sum of it and the others
     return pyo.Constraint.Skip    
 
-#model.cs_power_charging_limit = pyo.Constraint(model.f, model.t, model.cp, model.cs, rule = _cs_power_charging_limit) #This is used when the CS power is settled to be equilibrium between the 3 phases 
-model.cs_power_charging_limit = pyo.Constraint(model.t, model.cs,model.cp, rule = _cs_power_charging_limit) #This is used when the CS power is divided by three, and therefore it is possible to be not equilibrium between the 3 phases
+model.cs_power_charging_limit = pyo.Constraint(model.f, model.t, model.cs, model.cp, rule = _cs_power_charging_limit) #This is used when the CS power is settled to be equilibrium between the 3 phases 
+#model.cs_power_charging_limit = pyo.Constraint(model.t, model.cs,model.cp, rule = _cs_power_charging_limit) #This is used when the CS power is divided by three, and therefore it is possible to be not equilibrium between the 3 phases
 
 # CS power discharging limitation
 
-#def _cs_power_discharging_limit(m,f,t,cs,cp): This is used when the CS power is settled to be equilibrium between the 3 phases
-def _cs_power_discharging_limit(m,t,cs,cp): #This is used when the CS power is divided by three, and therefore it is possible to be not equilibrium between the 3 phases
+def _cs_power_discharging_limit(m,f,t,cs,cp): #This is used when the CS power is settled to be equilibrium between the 3 phases
+#def _cs_power_discharging_limit(m,t,cs,cp): #This is used when the CS power is divided by three, and therefore it is possible to be not equilibrium between the 3 phases
     if m.cs_id[cs] == m.my_cs_id_cp[cp]: 
         total = m.PCP[cp,t] - m.PCPdc[cp,t]
         print(f"\nCharging Point {cp}, that is on Charging Station {cs} is connected on phase {m.my_cp_fases[cp]}.")
@@ -259,28 +260,28 @@ def _cs_power_discharging_limit(m,t,cs,cp): #This is used when the CS power is d
             if other_cp != cp and m.my_cp_fases[cp] == m.my_cp_fases[other_cp] and m.my_cs_id_cp[cp] == m.my_cs_id_cp[other_cp]:
                 total = total + m.PCP[other_cp,t] - m.PCPdc[other_cp,t] 
                 print(f"\nThe sum is being done with the evs connected on phase {m.my_cp_fases[cp]}, which are: {total}\n")
-        return total >= -1 * m.Pcsmax[cs]/3 #if it is isolated, the sum will always be just it. If not, it will be the sum of it and the others
+        return total >= -1 * m.Pcsmax[f,cs] #if it is isolated, the sum will always be just it. If not, it will be the sum of it and the others
     return pyo.Constraint.Skip
-#model.cs_power_discharging_limit = pyo.Constraint(model.f,model.t, model.cs, model.cp,  rule = _cs_power_discharging_limit) #This is used when the CS power is settled to be equilibrium between the 3 phases 
-model.cs_power_discharging_limit = pyo.Constraint(model.t, model.cs, model.cp,  rule = _cs_power_discharging_limit) #This is used when the CS power is divided by three, and therefore it is possible to be not equilibrium between the 3 phases
+model.cs_power_discharging_limit = pyo.Constraint(model.f,model.t, model.cs, model.cp,  rule = _cs_power_discharging_limit) #This is used when the CS power is settled to be equilibrium between the 3 phases 
+#model.cs_power_discharging_limit = pyo.Constraint(model.t, model.cs, model.cp,  rule = _cs_power_discharging_limit) #This is used when the CS power is divided by three, and therefore it is possible to be not equilibrium between the 3 phases
 
 #Auxiliary expression to obtain the power consumption/discharge of the CS related to the CPs that are connected to it
-def _cs_power_charge_discharge_limit(m,t,cs): 
-    return m.PCS[cs,t]  == sum([m.PCP[cp,t] - m.PCPdc[cp,t] for cp in m.cp if m.cs_id[cs] == m.my_cs_id_cp[cp]])
-model._cs_power_charge_discharge_limit = pyo.Constraint(model.t, model.cs, rule =_cs_power_charge_discharge_limit)  
+def _cs_power_charge_discharge_limit(m,f,t,cs): 
+    return m.PCS[f,cs,t]  == sum([m.PCP[cp,t] - m.PCPdc[cp,t] for cp in m.cp if m.cs_id[cs] == m.my_cs_id_cp[cp]])
+model._cs_power_charge_discharge_limit = pyo.Constraint(model.f, model.t, model.cs, rule =_cs_power_charge_discharge_limit)  
 
 
 #**********************************************Company constraints************************************
 #Energy balance in the system considering threephase balanced PV, threephase unbalanced load consumption, and threphase unbalanced CS 
 def _energy_balance(m,f,t): 
     #return m.grid_import[t]  == sum(m.PCS[cs,t] for cs in m.cs)
-    return m.grid_import[f,t]  == sum(m.PCS[cs,t]/3 for cs in m.cs) + m.pl[f,t] - m.pv[f,t] + model.grid_export[f,t] 
+    return m.grid_import[f,t]  == sum(m.PCS[f,cs,t]/3 for cs in m.cs) + m.pl[f,t] - m.pv[f,t] + model.grid_export[f,t] 
 model._energy_balance = pyo.Constraint(model.f, model.t, rule =_energy_balance)  
 
 #Contracted power limitation
 def _contracted_power_constraint(m,f,t): 
     #return m.grid_import[f,t]  <= m.pt[f,t]*m.is_importing[t] + m.import_relax[f,t]
-    return m.grid_import[f,t]  <= m.pt[f,t]*m.is_importing[t]
+    return m.grid_import[f,t] <= m.pt[f,t]*m.is_importing[t]
 model._contracted_power_constraint = pyo.Constraint(model.f, model.t, rule =_contracted_power_constraint)  
 
 def _contracted_power_constraint2(m,f,t): 
@@ -299,7 +300,7 @@ def _FOag(m):
     #return sum([m.PEV[ev,t]*m.dT[t]*m.import_price[t] - m.PEVdc[ev, t]*m.dT[t]*(m.import_price[t]- m.DegCost) + (m.Etripn[ev,t] - m.EEV[ev,t]) + m.Etriprelax[ev,t]*m.penalty1 + m.Eminsocrelax[ev,t]*m.penalty2 for ev in np.arange(1, n_evs + 1) for t in np.arange(1, n_time + 1)])
     #return sum(m.grid_import[f,t] *(m.import_price[t]) +  (m.Etripn[ev,t] - m.EEV[ev,t])*0.1 + m.Etriprelax[ev,t]*m.penalty1 + m.Eminsocrelax[ev,t]*m.penalty2 for ev in np.arange(1, n_evs + 1) for f in np.arange(1, fases + 1) for t in np.arange(1, n_time + 1)) 
     #return sum(m.grid_import[f,t] *(m.import_price[t]) - m.grid_export[f,t] *(m.export_price[t]) + (m.EEVmax[ev] - m.EEV[ev,t])*0.1 + m.import_relax[f,t]*0.1 + m.Eminsocrelax[ev,t]*m.penalty2 for ev in np.arange(1, n_evs + 1) for f in np.arange(1, fases + 1) for t in np.arange(1, n_time + 1))     
-    return sum(m.grid_import[f,t]*m.dT[t] *(m.import_price[t]) - m.grid_export[f,t]*m.dT[t]*(m.export_price[t]) + (m.EEVmax[ev] - m.EEV[ev,t])*0.1  + m.Eminsocrelax[ev,t]*m.penalty2 for ev in np.arange(1, n_evs + 1) for f in np.arange(1, fases + 1) for t in np.arange(1, n_time + 1))  
+    return sum(m.grid_import[f,t]*m.dT[t] *(m.import_price[t]) - m.grid_export[f,t]*m.dT[t]*(m.export_price[t]) + (m.EEVmax[ev] - m.EEV[ev,t])*0.000001  + m.Eminsocrelax[ev,t]*m.penalty2 for ev in np.arange(1, n_evs + 1) for f in np.arange(1, fases + 1) for t in np.arange(1, n_time + 1))  
     #return sum(m.grid_import[f,t] *(m.import_price[t]) - m.grid_export[f,t]*(m.export_price[t])  for f in np.arange(1, fases + 1) for t in np.arange(1, n_time + 1))  
 model.FOag = pyo.Objective(rule = _FOag, sense = pyo.minimize)
 
@@ -307,7 +308,7 @@ model.FOag = pyo.Objective(rule = _FOag, sense = pyo.minimize)
 from pyomo.opt import SolverFactory
 model.write('res_V4_EC.lp',  io_options={'symbolic_solver_labels': True})
 
-opt = pyo.SolverFactory('cplex', executable="/mnt/c/Program Files/IBM/ILOG/CPLEX_Studio129/cplex/bin/x64_win64/cplex.exe")
+opt = pyo.SolverFactory('cplex', executable='C:\\Program Files\\IBM\\ILOG\\CPLEX_Studio129\\cplex\\bin\\x64_win64\\cplex.exe')
 opt.options['LogFile'] = 'res_V4_EC.log'
 
 results = opt.solve(model)#, tee=True)
