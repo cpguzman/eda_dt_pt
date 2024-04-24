@@ -237,7 +237,14 @@ model._cp_power_discharging = pyo.Constraint(model.ev, model.t, model.cp, rule =
 def _cs_power_charging_limit(m,f,t,cs,cp): #This is used when the CS power is settled to be equilibrium between the 3 phases
 #def _cs_power_charging_limit(m,t,cs,cp): #This is used when the CS power is divided by three, and therefore it is possible to be not equilibrium between the 3 phases
     if m.cs_id[cs] == m.my_cs_id_cp[cp] and not math.isnan(m.place[cp]): 
-        return (m.PCP[cp,t] - m.PCPdc[cp,t] + sum(m.PCP[other_cp,t] - m.PCPdc[other_cp,t] for other_cp in m.cp if other_cp != cp and m.my_cp_fases[cp] == m.my_cp_fases[other_cp] and m.my_cs_id_cp[cp] == m.my_cs_id_cp[other_cp])) <= m.Pcsmax[f,cs]    
+        print(f"my cp is {cp}")
+        x = m.PCP[cp,t] - m.PCPdc[cp,t]
+        for other_cp in m.cp:
+            if other_cp != cp and m.my_cp_fases[cp] == m.my_cp_fases[other_cp] and m.my_cs_id_cp[cp] == m.my_cs_id_cp[other_cp] and not math.isnan(m.place[other_cp]):
+                x += m.PCP[other_cp,t] - m.PCPdc[other_cp,t]
+        print(f"soma deu {x}")
+        return x <= m.Pcsmax[f,cs] 
+        #return (m.PCP[cp,t] - m.PCPdc[cp,t] + sum(m.PCP[other_cp,t] - m.PCPdc[other_cp,t] for other_cp in m.cp if other_cp != cp and m.my_cp_fases[cp] == m.my_cp_fases[other_cp] and m.my_cs_id_cp[cp] == m.my_cs_id_cp[other_cp] and not math.isnan(m.place[other_cp]))) <= m.Pcsmax[f,cs]    
     return pyo.Constraint.Skip    
 
 
@@ -247,8 +254,16 @@ model.cs_power_charging_limit = pyo.Constraint(model.f, model.t, model.cs, model
 # CS power discharging limitation
 
 def _cs_power_discharging_limit(m,f,t,cs,cp): #This is used when the CS power is settled to be equilibrium between the 3 phases
+    #@TODO Abri aqui de forma que consigas ver, Cindy
     if m.cs_id[cs] == m.my_cs_id_cp[cp] and not math.isnan(m.place[cp]): 
-        return (m.PCP[cp,t] - m.PCPdc[cp,t] + sum(m.PCP[other_cp,t] - m.PCPdc[other_cp,t] for other_cp in m.cp if other_cp != cp and m.my_cp_fases[cp] == m.my_cp_fases[other_cp] and m.my_cs_id_cp[cp] == m.my_cs_id_cp[other_cp])) >= -1 * m.Pcsmax[f,cs]
+        print(f"my cp is {cp}")
+        x = m.PCP[cp,t] - m.PCPdc[cp,t]
+        for other_cp in m.cp:
+            if other_cp != cp and m.my_cp_fases[cp] == m.my_cp_fases[other_cp] and m.my_cs_id_cp[cp] == m.my_cs_id_cp[other_cp] and not math.isnan(m.place[other_cp]):
+                x += m.PCP[other_cp,t] - m.PCPdc[other_cp,t]
+        print(f"soma deu {x}")
+        return x >= -1 * m.Pcsmax[f,cs]
+        #return (m.PCP[cp,t] - m.PCPdc[cp,t] + sum(m.PCP[other_cp,t] - m.PCPdc[other_cp,t] for other_cp in m.cp if other_cp != cp and m.my_cp_fases[cp] == m.my_cp_fases[other_cp] and m.my_cs_id_cp[cp] == m.my_cs_id_cp[other_cp] and not math.isnan(m.place[other_cp]))) >= -1 * m.Pcsmax[f,cs]
     return pyo.Constraint.Skip
 model.cs_power_discharging_limit = pyo.Constraint(model.f,model.t, model.cs, model.cp,  rule = _cs_power_discharging_limit) #This is used when the CS power is settled to be equilibrium between the 3 phases 
 
