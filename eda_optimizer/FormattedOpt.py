@@ -237,14 +237,9 @@ model._cp_power_discharging = pyo.Constraint(model.ev, model.t, model.cp, rule =
 def _cs_power_charging_limit(m,f,t,cs,cp): #This is used when the CS power is settled to be equilibrium between the 3 phases
 #def _cs_power_charging_limit(m,t,cs,cp): #This is used when the CS power is divided by three, and therefore it is possible to be not equilibrium between the 3 phases
     if m.cs_id[cs] == m.my_cs_id_cp[cp]: 
-        total = m.PCP[cp,t] - m.PCPdc[cp,t]
-        print(f"\nCharging Point {cp}, that is on Charging Station {cs} is connected on phase {m.my_cp_fases[cp]}.")
-        for other_cp in m.cp:
-            if other_cp != cp and m.my_cp_fases[cp] == m.my_cp_fases[other_cp] and m.my_cs_id_cp[cp] == m.my_cs_id_cp[other_cp]:
-                total = total + m.PCP[other_cp,t] - m.PCPdc[other_cp,t] 
-        print(f"\nThe sum is being done with the evs connected on phase {m.my_cp_fases[cp]}, which are: {total}\n")
-        return total <= m.Pcsmax[f,cs] #if it is isolated, the sum will always be just it. If not, it will be the sum of it and the others
+        return (m.PCP[cp,t] - m.PCPdc[cp,t] + sum(m.PCP[other_cp,t] - m.PCPdc[other_cp,t] for other_cp in m.cp if other_cp != cp and m.my_cp_fases[cp] == m.my_cp_fases[other_cp] and m.my_cs_id_cp[cp] == m.my_cs_id_cp[other_cp])) <= m.Pcsmax[f,cs]    
     return pyo.Constraint.Skip    
+
 
 model.cs_power_charging_limit = pyo.Constraint(model.f, model.t, model.cs, model.cp, rule = _cs_power_charging_limit) #This is used when the CS power is settled to be equilibrium between the 3 phases 
 #model.cs_power_charging_limit = pyo.Constraint(model.t, model.cs,model.cp, rule = _cs_power_charging_limit) #This is used when the CS power is divided by three, and therefore it is possible to be not equilibrium between the 3 phases
@@ -252,22 +247,14 @@ model.cs_power_charging_limit = pyo.Constraint(model.f, model.t, model.cs, model
 # CS power discharging limitation
 
 def _cs_power_discharging_limit(m,f,t,cs,cp): #This is used when the CS power is settled to be equilibrium between the 3 phases
-#def _cs_power_discharging_limit(m,t,cs,cp): #This is used when the CS power is divided by three, and therefore it is possible to be not equilibrium between the 3 phases
     if m.cs_id[cs] == m.my_cs_id_cp[cp]: 
-        total = m.PCP[cp,t] - m.PCPdc[cp,t]
-        print(f"\nCharging Point {cp}, that is on Charging Station {cs} is connected on phase {m.my_cp_fases[cp]}.")
-        for other_cp in m.cp:
-            if other_cp != cp and m.my_cp_fases[cp] == m.my_cp_fases[other_cp] and m.my_cs_id_cp[cp] == m.my_cs_id_cp[other_cp]:
-                total = total + m.PCP[other_cp,t] - m.PCPdc[other_cp,t] 
-                print(f"\nThe sum is being done with the evs connected on phase {m.my_cp_fases[cp]}, which are: {total}\n")
-        return total >= -1 * m.Pcsmax[f,cs] #if it is isolated, the sum will always be just it. If not, it will be the sum of it and the others
+        return (m.PCP[cp,t] - m.PCPdc[cp,t] + sum(m.PCP[other_cp,t] - m.PCPdc[other_cp,t] for other_cp in m.cp if other_cp != cp and m.my_cp_fases[cp] == m.my_cp_fases[other_cp] and m.my_cs_id_cp[cp] == m.my_cs_id_cp[other_cp])) >= -1 * m.Pcsmax[f,cs]
     return pyo.Constraint.Skip
 model.cs_power_discharging_limit = pyo.Constraint(model.f,model.t, model.cs, model.cp,  rule = _cs_power_discharging_limit) #This is used when the CS power is settled to be equilibrium between the 3 phases 
-#model.cs_power_discharging_limit = pyo.Constraint(model.t, model.cs, model.cp,  rule = _cs_power_discharging_limit) #This is used when the CS power is divided by three, and therefore it is possible to be not equilibrium between the 3 phases
 
 #Auxiliary expression to obtain the power consumption/discharge of the CS related to the CPs that are connected to it
 def _cs_power_charge_discharge_limit(m,f,t,cs): 
-    return m.PCS[f,cs,t]  == sum([m.PCP[cp,t] - m.PCPdc[cp,t] for cp in m.cp if m.cs_id[cs] == m.my_cs_id_cp[cp]])
+    return m.PCS[f,cs,t] == sum([m.PCP[cp,t] - m.PCPdc[cp,t] for cp in m.cp if m.cs_id[cs] == m.my_cs_id_cp[cp] and m.my_cp_fases[cp] == f])
 model._cs_power_charge_discharge_limit = pyo.Constraint(model.f, model.t, model.cs, rule =_cs_power_charge_discharge_limit)  
 
 
@@ -308,7 +295,7 @@ model.FOag = pyo.Objective(rule = _FOag, sense = pyo.minimize)
 from pyomo.opt import SolverFactory
 model.write('res_V4_EC.lp',  io_options={'symbolic_solver_labels': True})
 
-opt = pyo.SolverFactory('cplex', executable='C:\\Program Files\\IBM\\ILOG\\CPLEX_Studio129\\cplex\\bin\\x64_win64\\cplex.exe')
+opt = pyo.SolverFactory('cplex', executable='/mnt/c/Program Files/IBM/ILOG/CPLEX_Studio129/cplex/bin/x64_win64/cplex.exe')
 opt.options['LogFile'] = 'res_V4_EC.log'
 
 results = opt.solve(model)#, tee=True)
